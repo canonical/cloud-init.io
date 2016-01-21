@@ -1,0 +1,19 @@
+.box {
+  padding: 2rem 2rem 4.5rem;
+  border: 1px solid $alto-grey;
+  border-radius: 3px;
+
+  img {
+    width: 100%;
+  }
+
+  &__link {
+    display: inline-block;
+  }
+
+  .external {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+  }
+}
