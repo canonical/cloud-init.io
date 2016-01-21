@@ -1,0 +1,40 @@
+.hero {
+  @extend %vf-clearfix;
+  background: url('https://assets.ubuntu.com/v1/132ac670-sky-sunny-clouds-cloudy.jpg');
+  background-size: cover;
+
+  &__heading {
+    margin-top: 1rem;
+  }
+
+  &__heading,
+  &__summary {
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      width: 60%;
+    }
+  }
+
+  &__cta {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+}
+
+.logo {
+
+  display: flex;
+
+  &__img {
+    width: 80px;
+    height: 80px;
+  }
+
+  &__txt {
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 1rem;
+  }
+}
