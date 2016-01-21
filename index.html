@@ -1,168 +1,300 @@
 ---
 layout: default
 ---
-<section class="row">
 
   <!-- Hero banner -->
-  <div class="twelve-col">
+  <div class="hero">
 
-    <span class="logo">
-      Cloud Init
-    </span>
+    <section class="row">
 
-    <h1>The standard for customising cloud instances</h1>
+      <div class="wrapper">
 
-    <p>cloud-init allows you to launch an instance which will integrate with a configuration management solution of your choice.</p>
+        <div class="twelve-col">
+
+          <div class="logo">
+            <img class="logo__img" src="https://assets.ubuntu.com/v1/4fd55d51-picto-corepower-orange.svg" alt="Cloud Init logo" />
+            <span class="logo__txt">Cloud Init</span>
+          </div>
+
+          <h1 class="hero__heading">The standard for customising cloud instances</h1>
+
+          <p class="hero__summary">cloud-init is the Ubuntu package that handles early initialization of a
+            cloud instance. It is installed in the Ubuntu Cloud Images and also in the
+            official Ubuntu images available on EC2.</p>
+
+          <div class="six-col">
+            <a href="https://www.youtube.com/watch?v=-zL3BdbKyGY" class="hero__cta button--primary">
+              Watch tutorial
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<div class="wrapper">
+
+  <!-- Main selling points -->
+  <section class="row">
+
+    <div class="twelve-col">
+
+      <h2>Some of the things it configures are:</h2>
+
+      <ul class="list--bullets">
+        <li>setting a default locale</li>
+        <li>setting hostname</li>
+        <li>generate ssh private keys</li>
+        <li>adding ssh keys to user's .ssh/authorized_keys so they can log in</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Compatible Platforms -->
+  <section class="row">
+    <div class="twelve-col">
+      <h2>Works with many popular operating systems</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio culpa
+        maiores molestiae quae, id corrupti et excepturi rem, vitae cumque dolorem
+        iure illo nesciunt quia natus repellendus aut explicabo fugit!
+      </p>
+    </div>
+
+    <ul class="equal-height no-bullets twelve-col">
+      <li class="box four-col">
+          <a href="https://cloud.google.com/docs/">
+              <div>
+                  <img class="logo-gcp" src="//assets.ubuntu.com/v1/3d750e6c-logo-google-cloud-platform.png" alt="Google Cloud Platform">
+              </div>
+              <p>Get started on GCP&nbsp;›</p>
+          </a>
+      </li>
+      <li class="box four-col">
+          <a href="https://help.ubuntu.com/community/EC2StartersGuide">
+              <div>
+                  <img class="logo-amazonwebservices" src="//assets.ubuntu.com/v1/5e3fa4e7-logo-amazonwebservices.png" alt="Amazon Web Services (EC2)">
+              </div>
+              <p>The Ubuntu guide to EC2&nbsp;›</p>
+          </a>
+      </li>
+      <li class="box four-col last-col">
+          <a href="http://brightbox.com">
+              <div>
+                  <img src="//assets.ubuntu.com/v1/fb02090d-logo-brightbox-160.png" alt="Brightbox">
+              </div>
+              <p>Get started on Brightbox&nbsp;›</p>
+          </a>
+      </li>
+
+
+      <li class="box four-col">
+          <a href="https://community.hpcloud.com/article/getting-started-guide">
+          <div>
+              <img class="logo-hpcloud" src="//assets.ubuntu.com/v1/b52c4903-logo-hpcloud.png" alt="HP Cloud">
+          </div>
+          <p>Get started on HP Cloud&nbsp;›</p>
+          </a>
+      </li>
+      <li class="box four-col">
+          <a href="http://www.ibm.com/cloud-computing/social/us/en/startatrial/">
+          <div>
+              <img class="logo-ibm" src="//assets.ubuntu.com/v1/e986bb33-logo-ibm.png" alt="IBM SmartCloud">
+          </div>
+          <p>Get started on IBM SmartCloud&nbsp;›</p>
+          </a>
+      </li>
+      <li class="box four-col last-col">
+          <a href="http://www.windowsazure.com/en-us/documentation/services/virtual-machines/">
+              <div>
+                  <img class="logo-windowsazure" src="//assets.ubuntu.com/v1/eb041659-Microsoft-Azure_rgb_Blk.svg?w=170" alt="Microsoft Azure">
+              </div>
+          <p>Get started on Microsoft Azure&nbsp;›</p>
+          </a>
+      </li>
+      <li class="box four-col">
+          <a href="http://www.joyent.com/free-trial">
+              <div>
+                  <img class="logo-joyent" src="//assets.ubuntu.com/v1/238b87ea-logo-joyent.png" alt="Joyent">
+              </div>
+              <p>Get started on Joyent&nbsp;›</p>
+          </a>
+      </li>
+      <li class="box four-col">
+          <a href="https://solutionexchange.vmware.com/store/products/ubuntu-12-04-lts--2#.VA_9Dq2zDsa">
+              <div>
+                  <img class="logo-joyent" src="//assets.ubuntu.com/v1/20e30152-logo-vmware.png" alt="VMware" height="35">
+              </div>
+              <p>Get started on VMware&nbsp;›</p>
+          </a>
+      </li>
+      </ul>
+
+
+
+  </section>
+
+  <!-- Source Code -->
+  <section class="row">
+    <h2>Source Code</h2>
+
+    <div class="flex-wrap">
+
+      <div class="four-col">
+        <div class="box">
+          <h3>Baazar</h3>
+          <p>Browser and branch from Bazaar.</p>
+          <a class="external box__link" href="https://code.launchpad.net/cloud-init">Baazar repository</a>
+        </div>
+      </div>
+
+      <div class="four-col">
+        <div class="box">
+          <h3>Github</h3>
+          <p>Browse, branch, fork or clone from Github.</p>
+          <a class="external box__link" href="https://github.com/openstack/cloud-init">Github repository</a>
+        </div>
+      </div>
+
+      <div class="four-col last-col">
+        <div class="box">
+          <h3>Download</h3>
+          <p>Download the offically released archives.</p>
+          <a class="external box__link" href="https://launchpad.net/cloud-init/+download">Download project files</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Public Cloud Examples -->
+  <section class="row">
+    <div class="twelve-col">
+      <h2>Used across the public cloud</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In qui adipisci
+        assumenda, enim ipsum consequatur exercitationem, temporibus laudantium
+        beatae unde ut molestiae, corporis? Quos adipisci, provident, vel sed non.
+      </p>
+
+      <ul class="inline-logos">
+        <li class="inline-logos__item">
+            <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/4676d0be-lenovolowres.jpg" alt="Lenovo">
+        </li>
+        <li class="inline-logos__item">
+            <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/64f61220-emc.png" alt="EMC">
+        </li>
+        <li class="inline-logos__item">
+            <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/a9c75f9e-logo_amd.png" alt="AMD">
+        </li>
+        <li class="inline-logos__item">
+            <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/5ddba83a-logo-dell.svg" alt="Dell">
+        </li>
+        <li class="inline-logos__item">
+            <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/683950fd-logo-ibm.svg" alt="IBM">
+        </li>
+        <li class="inline-logos__item">
+            <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/4d6054f9-logo-cisco.svg" alt="Cisco">
+        </li>
+        <li class="inline-logos__item">
+            <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/a298e7ec-logo-hp.svg" alt="HP">
+        </li>
+        <li class="inline-logos__item">
+            <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/f7db330d-partner-logo-chaosprime.png" alt="ChaosPrime">
+        </li>
+        <li class="inline-logos__item">
+            <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/3630a703-partner-logo-allwinnertech.png" alt="Allwinner Technology">
+        </li>
+        <li class="inline-logos__item">
+            <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/23835286-partner-logo-rti.png" alt="Real-Time Innovations">
+        </li>
+        <li class="inline-logos__item">
+            <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/e6bc8a26-partner-logo-osrf.png" alt="OSRF">
+        </li>
+      </ul>
+      <a href="#_" class="button--primary right">See all public cloud partners</a>
+
+    </div>
+  </section>
+
+  <!-- Support channels -->
+  <section class="row">
+
+    <div class="twelve-col">
+
+      <h2>Need support?</h2>
+      <div class="flex-wrap">
+        <div class="four-col">
+          <div class="box">
+            <h3>
+              <a class="external" href="https://bugs.launchpad.net/cloud-init/+filebug">Report a bug</a>
+            </h3>
+            <p>Help us improve the software by flagging bugs and issues you find.</p>
+          </div>
+        </div>
+        <div class="four-col">
+          <div class="box">
+            <h3>
+              <a class="external" href="http://pingx.net/freenode/cloud-init">Chat on freenode</a>
+            </h3>
+            <p>We have an active IRC community - get involved!</p>
+          </div>
+        </div>
+        <div class="four-col last-col">
+          <div class="box">
+            <h3>
+              <a class="external" href="http://cloudinit.readthedocs.org/">Read the docs</a>
+            </h3>
+            <p>Always read the manual - perhaps your question has already be answered?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / The Team -->
+  <section class="row">
 
     <div class="six-col">
-      <a href="https://www.youtube.com/watch?v=-zL3BdbKyGY" class="button--primary">
-        Watch tutorial
-      </a>
-    </div>
-  </div>
-</section>
 
-<!-- Main selling points -->
-<section class="row">
+      <h2>About</h2>
 
-  <div class="twelve-col">
-
-    <h2>Use cloud init to configure:</h2>
-
-    <ul class="list-ticks">
-      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-    </ul>
-  </div>
-</section>
-
-<!-- Compatible Platforms -->
-<section class="row">
-  <div class="twelve-col">
-    <h2>Works with many popular operating systems</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio culpa
-      maiores molestiae quae, id corrupti et excepturi rem, vitae cumque dolorem
-      iure illo nesciunt quia natus repellendus aut explicabo fugit!
-    </p>
-
-    <ul class="inline-logos">
-      <li class="inline-logos__item">
-          <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/4676d0be-lenovolowres.jpg" alt="Lenovo">
-      </li>
-      <li class="inline-logos__item">
-          <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/64f61220-emc.png" alt="EMC">
-      </li>
-      <li class="inline-logos__item">
-          <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/a9c75f9e-logo_amd.png" alt="AMD">
-      </li>
-      <li class="inline-logos__item">
-          <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/5ddba83a-logo-dell.svg" alt="Dell">
-      </li>
-      <li class="inline-logos__item">
-          <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/683950fd-logo-ibm.svg" alt="IBM">
-      </li>
-      <li class="inline-logos__item">
-          <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/4d6054f9-logo-cisco.svg" alt="Cisco">
-      </li>
-      <li class="inline-logos__item">
-          <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/a298e7ec-logo-hp.svg" alt="HP">
-      </li>
-      <li class="inline-logos__item">
-          <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/f7db330d-partner-logo-chaosprime.png" alt="ChaosPrime">
-      </li>
-      <li class="inline-logos__item">
-          <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/3630a703-partner-logo-allwinnertech.png" alt="Allwinner Technology">
-      </li>
-      <li class="inline-logos__item">
-          <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/23835286-partner-logo-rti.png" alt="Real-Time Innovations">
-      </li>
-      <li class="inline-logos__item">
-          <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/e6bc8a26-partner-logo-osrf.png" alt="OSRF">
-      </li>
-      <li class="inline-logos__item">
-          <img class="inline-logos__image" src="https://assets.ubuntu.com/v1/d27eee64-partner-logo-banana-pro.png" alt="LeMaker">
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- Source Code -->
-<section class="row">
-  <h2>Source Code</h2>
-
-  <div class="four-col">
-    <div>Browser and branch from Bazaar</div>
-  </div>
-
-  <div class="four-col">
-    <div>Browse, branch, fork or clone from Github</div>
-  </div>
-
-  <div class="four-col">
-    <div>Download the offically released archives</div>
-  </div>
-</section>
-
-<!-- Public Cloud Examples -->
-<section class="row">
-  <div class="twelve-col">
-    <h2>Used across the public cloud</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In qui adipisci
-      assumenda, enim ipsum consequatur exercitationem, temporibus laudantium
-      beatae unde ut molestiae, corporis? Quos adipisci, provident, vel sed non.
-    </p>
-
-  </div>
-</section>
-
-<!-- Support channels -->
-<section class="row">
-
-  <div class="twelve-col">
-
-    <h2>Need support?</h2>
-
-    <a href="https://bugs.launchpad.net/cloud-init/+filebug">Report a bug</a>
-    <a href="http://pingx.net/freenode/cloud-init">Chat on freenode</a>
-    <a href="http://cloudinit.readthedocs.org/">Read the docs</a>
-  </div>
-</section>
-
-<!-- About / The Team -->
-<section class="row">
-
-  <div class="six-col">
-
-    <h2>About</h2>
-
-    <p>cloud-init initializes instances in cloud environments. cloud-init is
-      developed and released as free software under the
-      <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3 open source
-      license</a>. Originally designed for the Ubuntu distribution of Linux in
-      Amazon EC2, cloud-init is now supported on many Linux and UNIX
-      distributions in every major cloud.
-    </p>
-  </div>
-
-  <div class="six-col">
-
-    <h2>The Team</h2>
-
-    <div>
-      <h3>Scott Moser</h3>
-      <p><a href="http://ubuntu-smoser.blogspot.co.uk/">Scott</a> is the primary
-        author and active maintainer of cloud-init, and is a technical leader
-        on the Ubuntu Server Team for
-        <a href="http://www.canonical.com/">Canonical.</a></p>
+      <p>cloud-init initializes instances in cloud environments. cloud-init is
+        developed and released as free software under the
+        <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3 open source
+        license</a>. Originally designed for the Ubuntu distribution of Linux in
+        Amazon EC2, cloud-init is now supported on many Linux and UNIX
+        distributions in every major cloud.
+      </p>
     </div>
 
-    <div>
-      <h3>Joshua Harlow</h3>
-      <p><a href="https://launchpad.net/~harlowja">Joshua</a> is an active
-        maintainer of cloud-init, hacking on clouds for
-        <a href="https://www.yahoo.com/">Yahoo.</a></p>
+    <div class="six-col last-col">
+
+      <h2>The Team</h2>
+
+      <div class="media-unit">
+        <img class="media-unit__img" src="https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100" alt="" />
+        <div class="media-unit__txtwrap">
+          <h3 class="media-unit__heading">Scott Moser</h3>
+          <p class="media-unit__txt"><a href="http://ubuntu-smoser.blogspot.co.uk/">Scott</a> is the primary
+            author and active maintainer of cloud-init, and is a technical leader
+            on the Ubuntu Server Team for
+            <a href="http://www.canonical.com/">Canonical.</a></p>
+        </div>
+      </div>
+
+      <div class="media-unit">
+        <img class="media-unit__img" src="https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100" alt="" />
+        <div class="media-unit__txtwrap">
+          <h3 class="media-unit__heading">Joshua Harlow</h3>
+          <p class="media-unit__txt"><a href="https://launchpad.net/~harlowja">Joshua</a> is an active
+            maintainer of cloud-init, hacking on clouds for
+            <a href="https://www.yahoo.com/">Yahoo.</a></p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2016 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</p>
+  </footer>
+
+</div>
