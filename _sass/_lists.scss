@@ -1,0 +1,33 @@
+.list--bullets {
+  margin-left: 0;
+
+  @media only screen and (min-width: $breakpoint-medium) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    padding-left: 25px;
+    position: relative;
+    list-style: none;
+    box-sizing: border-box;
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      width: 50%;
+    }
+
+    &:before {
+      content: '';
+      background-image: url("http://assets.ubuntu.com/sites/ubuntu/latest/u/img/patterns/tick-orange.svg");
+      background-repeat: no-repeat;
+      display: block;
+      left: 2px;
+      top: 5px;
+      color: $white;
+      font-size: 20px;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+    }
+  }
+}
