@@ -1,0 +1,8 @@
+.wrapper {
+  max-width: $site-max-width;
+  margin: auto;
+}
+
+[class*=-col]:last-child {
+  margin-right: 0;
+}

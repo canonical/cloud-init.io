@@ -1,3 +1,9 @@
 @charset "utf-8";
 
+// Import the vanilla framework - https://github.com/ubuntudesign/vanilla-framework
+@import "../node_modules/vanilla-framework/scss/vanilla";
+
+// Run the vanilla framework
+@include vanilla;
+
 @import 'base';
