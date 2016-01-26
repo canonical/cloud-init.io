@@ -7,3 +7,31 @@
     padding: 0;
   }
 }
+
+// TEMP
+.partner-list {
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 3rem;
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      min-height: 250px;
+    }
+  }
+}
+
+// TEMP
+.source-code {
+
+  .box {
+
+    img {
+      width: 50%;
+      margin: auto;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
