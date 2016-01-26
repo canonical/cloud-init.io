@@ -1,6 +1,11 @@
 .media-unit {
   display: flex;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
+
+  &__img {
+    width: 200px;
+    height: auto;
+  }
 
   &__txtwrap {
     margin-left: 1rem;
