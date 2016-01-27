@@ -5,35 +5,34 @@ layout: default
   <!-- Hero banner -->
   <section class="row hero-row">
 
-    <section class="row">
+    <div class="wrapper">
 
-      <div class="wrapper">
+      <div class="eight-col">
 
-        <div class="twelve-col">
-
-          <div class="logo">
-            <img class="logo__img" src="https://assets.ubuntu.com/v1/4fd55d51-picto-corepower-orange.svg" alt="Cloud Init logo" />
-            <span class="logo__txt">Cloud Init</span>
-          </div>
-
-          <h1 class="hero__heading">The standard for customising cloud instances</h1>
-
-          <p class="hero__summary">Cloud images are operating system templates
-            and every instance starts out as an identical clone of every other
-            instance. It is the user data that gives every cloud instance its
-            personality and cloud-init is the tool applies user data to your
-            instances automatically.
-          </p>
-
-          <div class="six-col">
-            <a href="https://www.youtube.com/watch?v=-zL3BdbKyGY" class="hero__cta button--primary">
-              Watch tutorial
-            </a>
-          </div>
+        <div class="logo">
+          <img class="logo__img" src="https://assets.ubuntu.com/v1/4fd55d51-picto-corepower-orange.svg" alt="Cloud Init logo" />
+          <span class="logo__txt">Cloud Init</span>
         </div>
+
+        <h1 class="hero__heading">The standard for customising cloud instances</h1>
       </div>
-    </section>
-  </div>
+
+      <div class="eight-col">
+        <p class="hero__summary">Cloud images are operating system templates
+          and every instance starts out as an identical clone of every other
+          instance. It is the user data that gives every cloud instance its
+          personality and cloud-init is the tool applies user data to your
+          instances automatically.
+        </p>
+      </div>
+
+      <div class="six-col">
+        <a href="https://www.youtube.com/watch?v=-zL3BdbKyGY" class="hero__cta button--primary">
+          Watch tutorial
+        </a>
+      </div>
+    </div>
+  </section>
 
 <div class="wrapper">
 
@@ -68,78 +67,50 @@ layout: default
     <ul class="equal-height no-bullets twelve-col partner-list">
       <li class="box three-col">
           <a href="https://launchpad.net/ubuntu/+source/cloud-init">
-              <div>
-                  <img src="https://assets.ubuntu.com/v1/cbb0d58f-ubuntu.png" alt="Ubuntu logo">
-              </div>
+            <img class="box__img" src="https://assets.ubuntu.com/v1/cbb0d58f-ubuntu.png" alt="Ubuntu logo">
           </a>
       </li>
       <li class="box three-col">
           <a href="https://wiki.archlinux.org/index.php/Cloud-init">
-              <div>
-                  <img src="https://assets.ubuntu.com/v1/93d81aac-archlinux.png" alt="Arch Linux logo">
-              </div>
+            <img class="box__img" src="https://assets.ubuntu.com/v1/93d81aac-archlinux.png" alt="Arch Linux logo">
           </a>
       </li>
       <li class="box three-col">
           <a href="http://cloud.centos.org/centos/7/images/">
-              <div>
-                  <img src="https://assets.ubuntu.com/v1/9a7c8ce5-centos.png" alt="Centos logo">
-              </div>
+            <img class="box__img" src="https://assets.ubuntu.com/v1/9a7c8ce5-centos.png" alt="Centos logo">
           </a>
       </li>
 
       <li class="box three-col last-col">
           <a href="http://packages.qa.debian.org/c/cloud-init.html">
-          <div>
-              <img src="https://assets.ubuntu.com/v1/eda6b94a-redhat-logo.svg" alt="RedHat logo">
-          </div>
+            <img class="box__img" src="https://assets.ubuntu.com/v1/eda6b94a-redhat-logo.svg" alt="RedHat logo">
           </a>
       </li>
 
       <li class="box three-col">
           <a href="http://pellaeon.github.io/bsd-cloudinit">
-              <div>
-                  <img src="https://assets.ubuntu.com/v1/6fa4b259-freebsd.png" alt="FreeBSD logo">
-              </div>
+            <img class="box__img" src="https://assets.ubuntu.com/v1/6fa4b259-freebsd.png" alt="FreeBSD logo">
           </a>
       </li>
 
       <li class="box three-col">
           <a href="https://getfedora.org/en/cloud/download/">
-              <div>
-                  <img src="https://assets.ubuntu.com/v1/0be4c6c4-fedora.png" alt="Fedora logo">
-              </div>
+            <img class="box__img" src="https://assets.ubuntu.com/v1/0be4c6c4-fedora.png" alt="Fedora logo">
           </a>
       </li>
 
       <li class="box three-col">
           <a href="https://packages.gentoo.org/package/app-emulation/cloud-init">
-              <div>
-                  <img src="https://assets.ubuntu.com/v1/cb8e3497-gentoo.png" alt="Gentoo logo">
-              </div>
+            <img class="box__img" src="https://assets.ubuntu.com/v1/cb8e3497-gentoo.png" alt="Gentoo logo">
           </a>
       </li>
 
       <li class="box three-col last-col">
           <a href="https://susestudio.com/">
-              <div>
-                  <img src="https://assets.ubuntu.com/v1/2331fa6f-open-suse.png" alt="OpenSUSE logo">
-              </div>
+            <img class="box__img" src="https://assets.ubuntu.com/v1/2331fa6f-open-suse.png" alt="OpenSUSE logo">
           </a>
       </li>
-
-      <!-- <li class="box three-col"> QUERY: should this stay?
-          <a href="http://download.cirros-cloud.net/">
-              <div>
-                  <img src="https://assets.ubuntu.com/v1/c1e30825-cirros.png" alt="cirrOS logo">
-              </div>
-          </a>
-      </li> -->
-
-      </ul>
-
-
-
+    </ul>
   </section>
 
   <!-- Source Code -->
@@ -150,7 +121,7 @@ layout: default
 
       <div class="four-col">
         <div class="box">
-          <img src="https://assets.ubuntu.com/v1/087d7bb9-image-project-bazaar.png" alt="Baazar logo">
+          <img class="box__img" src="https://assets.ubuntu.com/v1/087d7bb9-image-project-bazaar.png" alt="Baazar logo">
           <h3>Baazar</h3>
           <p>Browser and branch from Bazaar.</p>
           <a class="external box__link" href="https://code.launchpad.net/cloud-init">Baazar repository</a>
@@ -159,7 +130,7 @@ layout: default
 
       <div class="four-col">
         <div class="box">
-          <img src="https://assets.ubuntu.com/v1/0fdf0020-github.png" alt="Github logo">
+          <img class="box__img" src="https://assets.ubuntu.com/v1/0fdf0020-github.png" alt="Github logo">
           <h3>Github</h3>
           <p>Browse, branch, fork or clone from Github.</p>
           <a class="external box__link" href="https://github.com/openstack/cloud-init">Github repository</a>
@@ -168,7 +139,7 @@ layout: default
 
       <div class="four-col last-col">
         <div class="box">
-          <img src="https://assets.ubuntu.com/v1/4cd0df1c-picto-download-orange.svg" alt="Download logo">
+          <img class="box__img" src="https://assets.ubuntu.com/v1/4cd0df1c-picto-download-orange.svg" alt="Download logo">
           <h3>Download</h3>
           <p>Download the offically released archives.</p>
           <a class="external box__link" href="https://launchpad.net/cloud-init/+download">Download project files</a>
@@ -297,11 +268,11 @@ layout: default
   <!-- Footer -->
   <footer class="footer">
 
-    <p>&copy; 2016 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</p>
+    <p class="footer__text">&copy; 2016 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</p>
 
     <ul class="footer__links">
-    	 <li><a href="http://www.ubuntu.com//legal">Legal information</a><span class="footer__dot"> &#183;</span></li>
-    	 <li><a href="https://github.com/ubuntudesign/cloud-init/issues/new">Report a bug on this site</a></li>
+    	 <li class="footer__list-item"><a href="http://www.ubuntu.com//legal">Legal information</a><span class="footer__dot"> &#183;</span></li>
+    	 <li class="footer__list-item"><a href="https://github.com/ubuntudesign/cloud-init/issues/new">Report a bug on this site</a></li>
     </ul>
 
   </footer>
