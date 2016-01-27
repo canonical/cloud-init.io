@@ -18,7 +18,7 @@
     padding: 2rem 3rem;
 
     @media only screen and (min-width: $breakpoint-medium) {
-      min-height: 250px;
+      min-height: 15.625rem; // 250px
     }
   }
 }
