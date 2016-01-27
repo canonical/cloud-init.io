@@ -28,5 +28,8 @@
     "gulp-sourcemaps": "^1.6.0",
     "npm": "^3.5.3",
     "vanilla-framework": "0.0.60"
+  },
+  "devDependencies": {
+    "gulp-gh-pages": "^0.5.4"
   }
 }
