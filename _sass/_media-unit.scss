@@ -1,0 +1,14 @@
+.media-unit {
+  display: flex;
+  margin: 2rem 0;
+
+  &__img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  &__txtwrap {
+    margin-left: 1rem;
+  }
+}

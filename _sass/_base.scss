@@ -1,8 +1,37 @@
 .wrapper {
   max-width: $site-max-width;
   margin: auto;
+  padding: 1rem;
+
+  @media only screen and (min-width: $breakpoint-medium) {
+    padding: 0;
+  }
 }
 
-[class*=-col]:last-child {
-  margin-right: 0;
+// TEMP
+.partner-list {
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 3rem;
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      min-height: 250px;
+    }
+  }
+}
+
+// TEMP
+.source-code {
+
+  .box {
+
+    &__img {
+      width: 50%;
+      margin: auto;
+      margin-bottom: 1.5rem;
+    }
+  }
 }
