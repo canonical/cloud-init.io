@@ -14,14 +14,3 @@
 'footer',
 'hero',
 'media-unit';
-
-@media only screen and (min-width: $breakpoint-medium) {
-
-  .flex-wrap {
-    display: flex;
-
-    > .four-col {
-      display: flex;
-    }
-  }
-}
