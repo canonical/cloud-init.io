@@ -1,14 +1,24 @@
+$breakpoint-small:     468px !default;
+
 .media-unit {
-  display: flex;
-  margin: 2rem 0;
+  margin: 4rem 0;
 
   &__img {
     width: 200px;
     height: auto;
+    margin: auto;
+    display: block;
+    max-height: 200px;
     border-radius: 50%;
+    margin-bottom: 1.5rem;
   }
 
   &__txtwrap {
     margin-left: 1rem;
+  }
+
+  @media only screen and (min-width: $breakpoint-small) {
+    display: flex;
+    margin: 2rem 0;
   }
 }
