@@ -5,10 +5,6 @@
 
   &__heading {
     margin-top: 1rem;
-  }
-
-  &__heading,
-  &__summary {
 
     @media only screen and (min-width: $breakpoint-medium) {
       width: 60%;
