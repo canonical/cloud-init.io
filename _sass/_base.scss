@@ -10,7 +10,7 @@
 
 // TEMP
 .partner-list {
-
+  
   .box {
     display: flex;
     align-items: center;
@@ -23,14 +23,7 @@
   }
 }
 
-// TEMP
 .source-code {
-
-  .box {
-
-    &__img {
-      width: 50%;
-      margin: 0 auto 1.5rem;
-    }
-  }
+  border: 0;
+  margin-top: -1px;
 }
