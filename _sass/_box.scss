@@ -1,7 +1,8 @@
 .box {
-  padding: 2rem;
+  padding: 2rem 2rem 4rem;
   border: 1px solid $alto-grey;
   border-radius: 3px;
+  position: relative;
 
   &__img {
     width: 100%;
@@ -11,6 +12,13 @@
 
   &__link {
     display: inline-block;
+  }
+
+  &__txt {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    max-width: calc(100% - 4rem);
   }
 
 }

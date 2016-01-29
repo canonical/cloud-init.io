@@ -10,12 +10,12 @@
 
 // TEMP
 .partner-list {
-  
+
   .box {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 3rem;
+    padding: 2rem 2rem 6rem;
 
     @media only screen and (min-width: $breakpoint-medium) {
       min-height: 15.625rem; // 250px
