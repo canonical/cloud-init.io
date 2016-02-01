@@ -8,6 +8,11 @@
   }
 }
 
+.row-grey {
+  border: 0;
+  margin-top: -1px;
+}
+
 // TEMP
 .partner-list {
 
@@ -21,9 +26,4 @@
       min-height: 15.625rem; // 250px
     }
   }
-}
-
-.source-code {
-  border: 0;
-  margin-top: -1px;
 }
