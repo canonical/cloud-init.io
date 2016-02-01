@@ -1,3 +1,4 @@
+// content wrapper
 .wrapper {
   max-width: $site-max-width;
   margin: auto;
@@ -8,22 +9,8 @@
   }
 }
 
+// row-grey override
 .row-grey {
   border: 0;
   margin-top: -1px;
-}
-
-// TEMP
-.partner-list {
-
-  .box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 2rem 6rem;
-
-    @media only screen and (min-width: $breakpoint-medium) {
-      min-height: 15.625rem; // 250px
-    }
-  }
 }
