@@ -3,6 +3,7 @@ $dark_aubergine: #2c001e;
 .hero-row {
   @extend %vf-clearfix;
   background-color: $dark_aubergine;
+  border-bottom: none;
 
   &__heading {
     margin-top: 1rem;
