@@ -17,15 +17,6 @@ layout: default
         <h1 class="hero__heading">The standard for customising cloud instances</h1>
       </div>
 
-      <div class="eight-col">
-        <p class="hero__summary">Cloud images are operating system templates
-          and every instance starts out as an identical clone of every other
-          instance. It is the user data that gives every cloud instance its
-          personality and cloud-init is the tool applies user data to your
-          instances automatically.
-        </p>
-      </div>
-
       <div class="six-col">
         <a href="https://www.youtube.com/watch?v=-zL3BdbKyGY" class="hero__cta button--primary">
           Watch tutorial
@@ -41,7 +32,13 @@ layout: default
 
     <div class="twelve-col">
 
-      <h2>Some of the things it configures are:</h2>
+      <p>Cloud images are operating system templates
+          and every instance starts out as an identical clone of every other
+          instance. It is the user data that gives every cloud instance its
+          personality and cloud-init is the tool applies user data to your
+          instances automatically.</p>
+
+      <p>Use cloud-init to configure;</p>
 
       <ul class="list--bullets">
         <li class="list--bullets-item">Setting a default locale</li>
@@ -68,79 +65,92 @@ layout: default
       <li class="box three-col">
           <a href="https://launchpad.net/ubuntu/+source/cloud-init">
             <img class="box__img" src="https://assets.ubuntu.com/v1/887474d1-ubuntu.svg" alt="Ubuntu logo">
+            <p class="box__txt">Get Ubuntu cloud images ›</p>
           </a>
       </li>
       <li class="box three-col">
           <a href="https://wiki.archlinux.org/index.php/Cloud-init">
             <img class="box__img" src="https://assets.ubuntu.com/v1/e0b23092-archlinux.svg" alt="Arch Linux logo">
+            <p class="box__txt">Get Ubuntu cloud images ›</p>
           </a>
+
       </li>
       <li class="box three-col">
           <a href="http://cloud.centos.org/centos/7/images/">
             <img class="box__img" src="https://assets.ubuntu.com/v1/31bd1765-centos.svg" alt="Centos logo">
+            <p class="box__txt">Get Ubuntu cloud images ›</p>
           </a>
       </li>
 
       <li class="box three-col last-col">
           <a href="http://packages.qa.debian.org/c/cloud-init.html">
             <img class="box__img" src="https://assets.ubuntu.com/v1/97e0563e-redhat.svg" alt="RedHat logo">
+            <p class="box__txt">Get Ubuntu cloud images ›</p>
           </a>
       </li>
 
       <li class="box three-col">
           <a href="http://pellaeon.github.io/bsd-cloudinit">
             <img class="box__img" src="https://assets.ubuntu.com/v1/6fa4b259-freebsd.png" alt="FreeBSD logo">
+            <p class="box__txt">Get Ubuntu cloud images ›</p>
           </a>
       </li>
 
       <li class="box three-col">
           <a href="https://getfedora.org/en/cloud/download/">
             <img class="box__img" src="https://assets.ubuntu.com/v1/1a53bedd-fedora.svg" alt="Fedora logo">
+            <p class="box__txt">Get Ubuntu cloud images ›</p>
           </a>
       </li>
 
       <li class="box three-col">
           <a href="https://packages.gentoo.org/package/app-emulation/cloud-init">
             <img class="box__img" src="https://assets.ubuntu.com/v1/cb8e3497-gentoo.png" alt="Gentoo logo">
+            <p class="box__txt">Get Ubuntu cloud images ›</p>
           </a>
       </li>
 
       <li class="box three-col last-col">
           <a href="https://susestudio.com/">
             <img class="box__img" src="https://assets.ubuntu.com/v1/2e497b2e-opensuse.svg" alt="OpenSUSE logo">
+            <p class="box__txt">Get Ubuntu cloud images ›</p>
           </a>
       </li>
     </ul>
   </section>
 
-  <!-- Source Code -->
-  <section class="row source-code">
+</div>
+
+<!-- Source Code -->
+<section class="row row-grey source-code">
+  <div class="wrapper">
     <h2>Source Code</h2>
-
-      <div class="equal-height">
-        <div class="four-col box">
-          <img class="box__img" src="https://assets.ubuntu.com/v1/160482fe-bazaar.svg" alt="Baazar logo">
-          <h3>Baazar</h3>
-          <p>Browse and branch from Bazaar.</p>
-          <a class="external box__link" href="https://code.launchpad.net/cloud-init">Baazar repository</a>
-        </div>
-
-        <div class="four-col box">
-          <img class="box__img" src="https://assets.ubuntu.com/v1/4f3fc618-github.svg" alt="Github logo">
-          <h3>Github</h3>
-          <p>Browse, branch, fork or clone from Github.</p>
-          <a class="external box__link" href="https://github.com/openstack/cloud-init">Github repository</a>
-        </div>
-
-        <div class="four-col last-col box">
-          <img class="box__img" src="https://assets.ubuntu.com/v1/4cd0df1c-picto-download-orange.svg" alt="Download logo">
-          <h3>Download</h3>
-          <p>Download the offically released archives.</p>
-          <a class="external box__link" href="https://launchpad.net/cloud-init/+download">Download project files</a>
-        </div>
+    <div class="equal-height">
+      <div class="four-col card">
+        <img class="card__img" src="https://assets.ubuntu.com/v1/160482fe-bazaar.svg" alt="Baazar logo">
+        <h3>Baazar</h3>
+        <p>Browse and branch from Bazaar.</p>
+        <a class="external card__link" href="https://code.launchpad.net/cloud-init">Baazar repository</a>
       </div>
 
-  </section>
+      <div class="four-col card">
+        <img class="card__img" src="https://assets.ubuntu.com/v1/4f3fc618-github.svg" alt="Github logo">
+        <h3>Github</h3>
+        <p>Browse, branch, fork or clone from Github.</p>
+        <a class="external card__link" href="https://github.com/openstack/cloud-init">Github repository</a>
+      </div>
+
+      <div class="four-col last-col card">
+        <img class="card__img" src="https://assets.ubuntu.com/v1/4cd0df1c-picto-download-orange.svg" alt="Download logo">
+        <h3>Download</h3>
+        <p>Download the offically released archives.</p>
+        <a class="external card__link" href="https://launchpad.net/cloud-init/+download">Download project files</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrapper">
 
   <!-- Public Cloud Examples -->
   <section class="row">
