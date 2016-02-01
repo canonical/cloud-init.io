@@ -1,14 +1,13 @@
+$dark_aubergine: #2c001e;
+
 .hero-row {
   @extend %vf-clearfix;
-  background: url('https://assets.ubuntu.com/v1/132ac670-sky-sunny-clouds-cloudy.jpg');
-  background-size: cover;
+  background-color: $dark_aubergine;
+  border-bottom: none;
 
   &__heading {
     margin-top: 1rem;
-
-    @media only screen and (min-width: $breakpoint-medium) {
-      width: 60%;
-    }
+    color: $white;
   }
 
   &__cta {
@@ -22,8 +21,8 @@
   margin-bottom: 2rem;
 
   &__img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
 
   &__txt {
@@ -32,5 +31,6 @@
     align-items: center;
     display: flex;
     padding-left: 1rem;
+    color: $white;
   }
 }

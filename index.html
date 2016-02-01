@@ -2,35 +2,35 @@
 layout: default
 ---
 
-  <!-- Hero banner -->
-  <section class="row hero-row">
+<!-- Hero banner -->
+<section class="row hero-row">
 
-    <div class="wrapper">
+  <div class="wrapper">
 
-      <div class="eight-col">
+    <div class="eight-col">
 
-        <div class="logo">
-          <img class="logo__img" src="https://assets.ubuntu.com/v1/4fd55d51-picto-corepower-orange.svg" alt="Cloud Init logo" />
-          <span class="logo__txt">Cloud Init</span>
-        </div>
-
-        <h1 class="hero__heading">The standard for customising cloud instances</h1>
+      <div class="logo">
+        <img class="logo__img" src="https://assets.ubuntu.com/v1/4fd55d51-picto-corepower-orange.svg" alt="Cloud Init logo" />
+        <span class="logo__txt">cloud-init</span>
       </div>
 
-      <div class="six-col">
-        <a href="https://www.youtube.com/watch?v=-zL3BdbKyGY" class="hero__cta button--primary">
-          Watch tutorial
-        </a>
-      </div>
+      <h1 class="hero-row__heading">The standard for customising cloud instances</h1>
     </div>
-  </section>
 
-<div class="wrapper">
+    <div class="six-col">
+      <a href="https://www.youtube.com/watch?v=-zL3BdbKyGY" class="hero__cta button--primary">
+        Watch tutorial
+      </a>
+    </div>
+  </div>
+</section>
 
-  <!-- Main selling points -->
-  <section class="row">
+<!-- Main selling points -->
+<section class="row">
 
-    <div class="twelve-col">
+  <div class="wrapper">
+
+    <div class="eight-col">
 
       <p>Cloud images are operating system templates
           and every instance starts out as an identical clone of every other
@@ -38,23 +38,27 @@ layout: default
           personality and cloud-init is the tool applies user data to your
           instances automatically.</p>
 
-      <p>Use cloud-init to configure;</p>
+      <p>Use cloud-init to configure:</p>
+    </div>
 
+    <div class="twelve-col">
       <ul class="list--bullets">
         <li class="list--bullets-item">Setting a default locale</li>
         <li class="list--bullets-item">Setting the hostname</li>
-        <li class="list--bullets-item">Generating and setting up ssh private keys</li>
+        <li class="list--bullets-item">Generating and setting up SSH private keys</li>
         <li class="list--bullets-item">Setting up ephemeral mount points</li>
       </ul>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Compatible Platforms -->
-  <section class="row">
+<!-- Compatible Platforms -->
+<section class="row">
+  <div class="wrapper">
     <div class="eight-col">
       <h2>Works with many popular operating systems</h2>
       <p>While cloud-init started life in Ubuntu, it is now available for most
-        major linux and FreeBSD operating systems. For cloud image providers,
+        major Linux and FreeBSD operating systems. For cloud image providers,
         then cloud-init handles many of the differences between cloud vendors
         automatically &mdash; for example, the official Ubuntu cloud images are
         identical across all public and private clouds.
@@ -84,7 +88,7 @@ layout: default
 
       <li class="box three-col last-col">
           <a href="http://packages.qa.debian.org/c/cloud-init.html">
-            <img class="box__img" src="https://assets.ubuntu.com/v1/97e0563e-redhat.svg" alt="RedHat logo">
+            <img class="box__img" src="https://assets.ubuntu.com/v1/6947a9e3-redhat.svg" alt="RedHat logo">
             <p class="box__txt">Get Ubuntu cloud images ›</p>
           </a>
       </li>
@@ -105,7 +109,7 @@ layout: default
 
       <li class="box three-col">
           <a href="https://packages.gentoo.org/package/app-emulation/cloud-init">
-            <img class="box__img" src="https://assets.ubuntu.com/v1/cb8e3497-gentoo.png" alt="Gentoo logo">
+            <img class="box__img" src="https://assets.ubuntu.com/v1/fa9e5dad-gentoo.png" alt="Gentoo logo">
             <p class="box__txt">Get Ubuntu cloud images ›</p>
           </a>
       </li>
@@ -117,31 +121,30 @@ layout: default
           </a>
       </li>
     </ul>
-  </section>
-
-</div>
+  </div>
+</section>
 
 <!-- Source Code -->
 <section class="row row-grey source-code">
   <div class="wrapper">
-    <h2>Source Code</h2>
+    <h2>Source code</h2>
     <div class="equal-height">
       <div class="four-col card">
-        <img class="card__img" src="https://assets.ubuntu.com/v1/160482fe-bazaar.svg" alt="Baazar logo">
+        <img class="card__img" src="https://assets.ubuntu.com/v1/2d779aa4-bazaar+%281%29.svg" alt="Baazar logo">
         <h3>Baazar</h3>
         <p>Browse and branch from Bazaar.</p>
         <a class="external card__link" href="https://code.launchpad.net/cloud-init">Baazar repository</a>
       </div>
 
       <div class="four-col card">
-        <img class="card__img" src="https://assets.ubuntu.com/v1/4f3fc618-github.svg" alt="Github logo">
-        <h3>Github</h3>
-        <p>Browse, branch, fork or clone from Github.</p>
-        <a class="external card__link" href="https://github.com/openstack/cloud-init">Github repository</a>
+        <img class="card__img" src="https://assets.ubuntu.com/v1/e59251d7-github.svg" alt="GitHub logo">
+        <h3>GitHub</h3>
+        <p>Browse, branch, fork or clone from GitHub.</p>
+        <a class="external card__link" href="https://github.com/openstack/cloud-init">GitHub repository</a>
       </div>
 
       <div class="four-col last-col card">
-        <img class="card__img" src="https://assets.ubuntu.com/v1/4cd0df1c-picto-download-orange.svg" alt="Download logo">
+        <img class="card__img" src="https://assets.ubuntu.com/v1/d656d6b1-picto-download-orange.svg" alt="Download logo">
         <h3>Download</h3>
         <p>Download the offically released archives.</p>
         <a class="external card__link" href="https://launchpad.net/cloud-init/+download">Download project files</a>
@@ -150,15 +153,11 @@ layout: default
   </div>
 </section>
 
-<div class="wrapper">
-
-  <!-- Public Cloud Examples -->
-  <section class="row">
+<!-- Public Cloud Examples -->
+<section class="row">
+  <div class="wrapper">
     <div class="twelve-col">
-      <h2>Used across the public cloud</h2>
-      <p>Amazon, Google, Azure, Openstack, MAAS, and a long list of Ubuntu
-        Certified Public Cloud partners support cloud-init.
-      </p>
+      <h2 class="muted-heading">Used across the public cloud</h2>
 
       <ul class="inline-logos">
         <li class="inline-logos__item">
@@ -189,48 +188,59 @@ layout: default
       <p class="align-center">
         <a href="http://partners.ubuntu.com/find-a-partner?programme=certified-public-cloud" class="external">See our other Ubuntu public cloud partners</a>
       </p>
-
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Support channels -->
-  <section class="row support">
+<!-- Support channels -->
+<section class="row row-grey support">
+
+  <div class="wrapper">
 
     <div class="eight-col">
-      <h2>Need support?</h2>
+      <h2>Support</h2>
     </div>
 
     <div class="equal-height">
-      <div class="four-col box">
-        <h3>
-          <a class="external" href="https://bugs.launchpad.net/cloud-init/+filebug">Report a bug</a>
-        </h3>
-        <p>Help us improve the software by flagging bugs and issues you find.</p>
-      </div>
-      <div class="four-col box">
-        <h3>
-          <a class="external" href="http://pingx.net/freenode/cloud-init">Chat on freenode</a>
-        </h3>
-        <p>We have an active IRC community &mdash; get involved!</p>
-      </div>
-      <div class="four-col last-col box">
+      <div class="three-col box">
         <h3>
           <a class="external" href="http://cloudinit.readthedocs.org/">Read the docs</a>
         </h3>
         <p>Always read the manual &mdash; perhaps your question has already be answered?</p>
       </div>
+      <div class="three-col box">
+        <h3>
+          <a class="external" href="http://pingx.net/freenode/cloud-init">Chat on freenode</a>
+        </h3>
+        <p>We have an active IRC community &mdash; get involved!</p>
+      </div>
+      <div class="three-col box">
+        <h3>
+          <a class="external" href="http://stackexchange.com/search?q=cloud-init">Search on Stack Exchange</a>
+        </h3>
+        <p>Ask questions and search for answers at StackExchange.</p>
+      </div>
+      <div class="three-col last-col box">
+        <h3>
+          <a class="external" href="https://bugs.launchpad.net/cloud-init/+filebug">Report a bug</a>
+        </h3>
+        <p>Help us improve the software by flagging bugs and issues you find on Launchpad.</p>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- About / The Team -->
-  <section class="row">
+<!-- About / The Team -->
+<section class="row">
 
-    <div class="six-col">
+  <div class="wrapper">
+
+    <div class="five-col">
 
       <h2>About</h2>
 
       <p>
-        Cloud-init is developed and released as free software under the
+        cloud-init is developed and released as free software under the
         <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3 open source
         license</a>. It was originally designed for the <a href="http://www.ubuntu.com/">
         Ubuntu</a> distribution of Linux in Amazon EC2, but is now supported on many
@@ -238,9 +248,9 @@ layout: default
       </p>
     </div>
 
-    <div class="six-col last-col">
+    <div class="seven-col last-col">
 
-      <h2>The Team</h2>
+      <h2>The team</h2>
 
       <div class="media-unit">
         <img class="media-unit__img" src="https://assets.ubuntu.com/v1/64bd8e20-scott-moser.jpg" alt="Scott Moser profile picture" />
@@ -263,18 +273,5 @@ layout: default
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-
-    <p class="footer__text">&copy; 2016 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</p>
-
-    <ul class="footer__links">
-    	 <li class="footer__list-item"><a href="http://www.ubuntu.com//legal">Legal information</a><span class="footer__dot"> &#183;</span></li>
-    	 <li class="footer__list-item"><a href="https://github.com/ubuntudesign/cloud-init/issues/new">Report a bug on this site</a></li>
-    </ul>
-
-  </footer>
-
-</div>
+  </div>
+</section>
