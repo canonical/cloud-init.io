@@ -20,5 +20,9 @@ $breakpoint-small:     468px !default;
   @media only screen and (min-width: $breakpoint-small) {
     display: flex;
     margin: 2rem 0;
+
+    &__img {
+      margin: 0;
+    }
   }
 }
