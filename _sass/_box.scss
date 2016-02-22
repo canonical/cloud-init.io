@@ -3,11 +3,37 @@
   border-radius: 3px;
   position: relative;
   background: $white;
-  padding: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    img {
+      align-self: center;
+      justify-content: center;
+    }
+  }
+
+  &__txt {
+    text-align: center;
+    display: block;
+    width: 100%;
+    align-self: flex-end;
+  }
+
+  &__img-wrap {
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+  }
 
   @media only screen and (min-width: $site-max-width) {
-    min-height: 15.625rem; // 250px
-    padding: 2rem 2rem 4rem;
+    padding: 1rem;
 
     .partner-list & {
       display: flex;
@@ -26,8 +52,11 @@
 
   &__img {
     width: 100%;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 118px;
+    max-height: 118px;
+    display: block;
+    margin: auto;
+    padding: 0 1rem;
   }
 
   &__link {
@@ -35,9 +64,7 @@
   }
 
   &__txt {
-    position: absolute;
-    bottom: 1rem;
-    left: 2rem;
-    max-width: calc(100% - 4rem);
+    margin: 1rem 0 0;
+    text-align: center;
   }
 }

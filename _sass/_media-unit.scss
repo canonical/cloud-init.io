@@ -4,7 +4,7 @@ $breakpoint-small:     468px !default;
   margin: 4rem 0;
 
   &__img {
-    width: 100px;
+    min-width: 100px;
     height: auto;
     margin: auto;
     display: block;
