@@ -16,3 +16,6 @@ url: "http://cloud-init.org" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+# only build incrementally
+incremental: true
