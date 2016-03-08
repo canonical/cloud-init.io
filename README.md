@@ -1,6 +1,6 @@
 # Cloud Init
 
-Codebase for http://cloud-init.org - the marketing website
+Codebase for http://cloud-init.io - the marketing website
 
 ## Getting Started
 
