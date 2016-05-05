@@ -5,6 +5,7 @@ var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var sourcemaps = require('gulp-sourcemaps');
 var ghPages = require('gulp-gh-pages');
+var uglify = require('gulp-uglify');
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -29,7 +30,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass', 'js', 'jekyll-build'], function() {
     browserSync({
         server: {
             baseDir: '_site'
@@ -42,7 +43,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
  */
 gulp.task('sass', function () {
     return gulp.src('_sass/main.scss')
-         .pipe(sourcemaps.init())
+        .pipe(sourcemaps.init())
         .pipe(sass({
             includePaths: ['scss'],
             onError: browserSync.notify
@@ -55,11 +56,23 @@ gulp.task('sass', function () {
 });
 
 /**
+ * Compile files from _js into both _site/css (for live injecting) and site (for future jekyll builds)
+ */
+ gulp.task('js', function() {
+   return gulp.src('_js/*.js')
+     .pipe(uglify())
+     .pipe(gulp.dest('_site/js'))
+     .pipe(browserSync.reload({stream:true}))
+     .pipe(gulp.dest('js'));
+ });
+
+/**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
     gulp.watch('_sass/*.scss', ['sass']);
+    gulp.watch('_js/*.js', ['js']);
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
