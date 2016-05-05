@@ -25,11 +25,12 @@
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-sass": "^2.1.1",
-    "gulp-sourcemaps": "^1.6.0",
-    "npm": "^3.5.3",
-    "vanilla-framework": "0.0.60"
+    "gulp-sourcemaps": "*",
+    "npm": "*",
+    "vanilla-framework": "0.0.71"
   },
   "devDependencies": {
-    "gulp-gh-pages": "^0.5.4"
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-uglify": "^1.5.3"
   }
 }
