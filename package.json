@@ -30,7 +30,6 @@
     "vanilla-framework": "0.0.60"
   },
   "devDependencies": {
-    "gulp-gh-pages": "^0.5.4",
-    "gulp-jekyll": "0.0.0"
+    "gulp-gh-pages": "^0.5.4"
   }
 }
