@@ -1,19 +1,16 @@
 {
   "name": "cloud-init",
-  "version": "1.0.0",
   "description": "Codebase for http://cloud-init.org - the marketing website",
-  "main": "_site/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "sass-lint static/**/*.scss --verbose --no-exit",
+    "clean": "rm -rf node_modules yarn-error.log css *.log *.sqlite _site/ build/ .jekyll-metadata",
+    "watch": "node-sass --include-path node_modules --source-map true --watch _sass --output css",
+    "build": "node-sass --include-path node_modules _sass --output css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://barrymcgee@github.com/ubuntudesign/cloud-init.git"
   },
-  "keywords": [
-    "cloud",
-    "init"
-  ],
   "author": "Barry McGee <barry.mcgee@canonical.com>",
   "license": "GPL-3.0",
   "bugs": {
@@ -31,6 +28,8 @@
   },
   "devDependencies": {
     "gulp-gh-pages": "^0.5.4",
-    "gulp-uglify": "^1.5.3"
+    "gulp-uglify": "^1.5.3",
+    "sass-lint": "^1.10.2",
+    "node-sass": "^4.5.3"
   }
 }
