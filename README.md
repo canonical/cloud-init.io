@@ -2,29 +2,25 @@
 
 Codebase for http://cloud-init.io - the marketing website
 
-## Getting Started
+## Local development
 
-To run this project, clone the project, drop into the folder and run;
+The simplest way to run the site locally is to first [install Docker](https://docs.docker.com/engine/installation/) (on Linux you may need to [add your user to the `docker` group](https://docs.docker.com/engine/installation/linux/linux-postinstall/)), and then use the `./run` script:
 
-`npm i`
+``` bash
+./run
+```
 
-...this will install all required dependancies.
+Once the containers are setup, you can visit <http://127.0.0.1:8009> in your browser.
 
-To fire up the project, you should then run;
+### Building CSS
 
-`gulp`
+For working on [Sass files](_sass), you may want to dynamically watch for changes to rebuild the CSS whenever something changes.
 
-..and navigate to;
+To setup the watcher, open a new terminal window and run:
 
-`http://localhost:3000/`
-
-## Deploy to Github Pages
-
-To deploy to Github Pages under your local Github username, please run;
-
-`gulp deploy`
-
-You should then be able to view the site at: `http://YOUR-GITHUB-USERNAME.github.io/cloud-init`
+``` bash
+./run watch
+```
 
 ## Licence
 
