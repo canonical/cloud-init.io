@@ -1,18 +1,10 @@
 @charset "utf-8";
 
-// Import the vanilla framework - https://github.com/ubuntudesign/vanilla-framework
-@import "../node_modules/vanilla-framework/scss/vanilla";
+// Import the Vanilla Brochure Theme - https://github.com/vanilla-framework/vanilla-brochure-theme
+@import "../node_modules/vanilla-brochure-theme/scss/build";
 
-// Run the vanilla framework
-@include vanilla;
+// Optionally override some settings
+$color-brand: #e95420;
 
-@import
-
-'base',
-'box',
-'card',
-'lists',
-'footer',
-'hero',
-'media-unit',
-'media-box';
+// Run the Vanilla Brochure Theme
+@include vanilla-brochure-theme;

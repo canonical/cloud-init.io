@@ -24,7 +24,7 @@
     "gulp-sass": "^2.1.1",
     "gulp-sourcemaps": "*",
     "npm": "*",
-    "vanilla-framework": "0.0.71"
+    "vanilla-brochure-theme": "1.0.8"
   },
   "devDependencies": {
     "gulp-gh-pages": "^0.5.4",
