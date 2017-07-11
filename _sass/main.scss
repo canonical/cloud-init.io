@@ -1,10 +1,39 @@
 @charset "utf-8";
 
-// Import the Vanilla Brochure Theme - https://github.com/vanilla-framework/vanilla-brochure-theme
-@import "../node_modules/vanilla-brochure-theme/scss/build";
-
 // Optionally override some settings
 $color-brand: #e95420;
+$color-accent: #2c001e;
+
+// Import the Vanilla Brochure Theme - https://github.com/vanilla-framework/vanilla-brochure-theme
+@import "../node_modules/vanilla-brochure-theme/scss/theme";
 
 // Run the Vanilla Brochure Theme
 @include vanilla-brochure-theme;
+
+// Fixes
+
+// .p-strip--light is appearing with a transparent background
+.p-strip--light {
+  background-color: #f7f7f7;
+}
+
+// split list last item has dotted bottom border
+@media (min-width: 768px) {
+  [class*='p-list'].is-split .p-list__item:last-of-type {
+    border-bottom: 0;
+  }
+}
+
+// hr has no margin bottom
+hr {
+  margin-bottom: 1.5rem !important;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 2.5rem !important;
+  }
+}
+
+// heading icon in hero on accent bg
+.p-heading-icon__title {
+  color: $color-x-light;
+}
