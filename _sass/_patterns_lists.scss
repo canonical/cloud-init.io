@@ -1,0 +1,19 @@
+@mixin cloud-init-p-lists {
+  @include cloud-init-list-is-split;
+  @include cloud-init-list-is-ticked;
+}
+
+@mixin cloud-init-list-is-split {
+ // split list last item has dotted bottom border
+  @media (min-width: 768px) {
+    [class*='p-list'].is-split .p-list__item:last-of-type {
+      border-bottom: 0;
+    }
+  }
+}
+
+@mixin cloud-init-list-is-ticked {
+  .is-ticked {
+    background-image: svg-tick($color-brand);
+  }
+}

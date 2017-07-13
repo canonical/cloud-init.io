@@ -1,18 +1,16 @@
-@charset "utf-8";
+@import "settings_colors";
 
-// Import the vanilla framework - https://github.com/ubuntudesign/vanilla-framework
-@import "../node_modules/vanilla-framework/scss/vanilla";
+@import "vanilla-brochure-theme/scss/theme";
+@include vanilla-brochure-theme;
 
-// Run the vanilla framework
-@include vanilla;
+@import "patterns_strip";
+@include cloud-init-p-strips;
 
-@import
+@import "patterns_lists";
+@include cloud-init-p-lists;
 
-'base',
-'box',
-'card',
-'lists',
-'footer',
-'hero',
-'media-unit',
-'media-box';
+@import "patterns_heading-icon";
+@include cloud-init-p-heading-icon;
+
+@import "patterns_avatar";
+@include cloud-init-p-avatar;
