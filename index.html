@@ -2,17 +2,22 @@
 layout: default
 ---
 
-<section class="p-strip p-strip--accent">
+<section class="p-strip p-strip--accent is-dark">
   <div class="row">
     <div class="col-12 suffix-4">
       <div class="p-heading-icon">
         <div class="p-heading-icon__header">
-          <img class="p-heading-icon__img" src="https://assets.ubuntu.com/v1/4fd55d51-picto-corepower-orange.svg">
-          <h3 class="p-heading-icon__title" style="color:#fff">cloud-init</h3>
+          <img class="p-heading-icon__img"
+            src="https://assets.ubuntu.com/v1/4fd55d51-picto-corepower-orange.svg"
+            alt="">
+          <h3 class="p-heading-icon__title">cloud-init</h3>
         </div>
       </div>
       <h1>The standard for customising cloud instances</h1>
-      <a class="p-link--external p-button--brand" href="https://www.youtube.com/watch?v=-zL3BdbKyGY">Watch tutorial</a>
+      <a class="p-button--brand"
+        href="https://www.youtube.com/watch?v=-zL3BdbKyGY">
+        <span class="p-link--external">Watch tutorial</span>
+      </a>
     </div>
   </div>
 </section>
@@ -20,7 +25,12 @@ layout: default
 <section class="p-strip is-deep is-bordered">
   <div class="row">
     <div class="col-8">
-      <p>Cloud images are operating system templates and every instance starts out as an identical clone of every other instance. It is the user data that gives every cloud instance its personality and cloud-init is the tool applies user data to your instances automatically.</p>
+      <p>
+        Cloud images are operating system templates and every instance starts
+        out as an identical clone of every other instance. It is the user data
+        that gives every cloud instance its personality and cloud-init is the
+        tool applies user data to your instances automatically.
+      </p>
       <p>Use cloud-init to configure:</p>
     </div>
   </div>
@@ -29,164 +39,243 @@ layout: default
       <ul class="p-list is-split u-no-margin--top">
         <li class="p-list__item is-ticked">Setting a default locale</li>
         <li class="p-list__item is-ticked">Setting the hostname</li>
-        <li class="p-list__item is-ticked">Generating and setting up SSH private keys</li>
-        <li class="p-list__item is-ticked">Setting up ephemeral mount points</li>
+        <li class="p-list__item is-ticked">
+          Generating and setting up SSH private keys
+        </li>
+        <li class="p-list__item is-ticked">
+          Setting up ephemeral mount points
+        </li>
       </ul>
     </div>
   </div>
 </section>
 
 <section class="p-strip is-deep">
-    <div class="row">
-      <div class="col-8">
-        <h2>Works with many popular operating systems</h2>
-        <p>While cloud-init started life in Ubuntu, it is now available for most major Linux and FreeBSD operating systems. For cloud image providers, then cloud-init handles many of the differences between cloud vendors automatically &mdash; for example, the official Ubuntu cloud images are identical across all public and private clouds.</p>
+  <div class="row">
+    <div class="col-9">
+      <h2>Works with many popular operating systems</h2>
+      <p>
+        While cloud-init started life in Ubuntu, it is now available for most
+        major Linux and FreeBSD operating systems. For cloud image providers,
+        then cloud-init handles many of the differences between cloud vendors
+        automatically &mdash; for example, the official Ubuntu cloud images
+        are identical across all public and private clouds.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="u-equal-height">
+      <div class="p-card col-3">
+        <p class="p-card__content  u-align--center u-vertically-center"
+          style="min-height: 100px;">
+          <img src="https://assets.ubuntu.com/v1/887474d1-ubuntu.svg"
+            alt="Ubuntu logo" style="max-height: 90px;">
+        </p>
+        <footer class="p-card__footer">
+          <a class="p-link--external"
+            href="https://launchpad.net/ubuntu/+source/cloud-init">
+            Get packages
+          </a>
+        </footer>
+      </div>
+      <div class="p-card col-3">
+        <p class="p-card__content  u-align--center u-vertically-center"
+          style="min-height: 100px;">
+          <img src="https://assets.ubuntu.com/v1/e0b23092-archlinux.svg"
+            alt="Arch Linux logo" style="max-height: 90px;">
+        </p>
+        <footer class="p-card__footer">
+          <a class="p-link--external"
+            href="https://wiki.archlinux.org/index.php/Cloud-init">
+            Get packages
+          </a>
+        </footer>
+      </div>
+      <div class="p-card col-3">
+        <p class="p-card__content  u-align--center u-vertically-center"
+          style="min-height: 100px;">
+          <img src="https://assets.ubuntu.com/v1/31bd1765-centos.svg"
+            alt="CentOS logo" style="max-height: 90px;">
+        </p>
+        <footer class="p-card__footer">
+          <a class="p-link--external"
+            href="https://cloud.centos.org/centos/7/images/">Get packages</a>
+        </footer>
+      </div>
+      <div class="p-card col-3">
+        <p class="p-card__content  u-align--center u-vertically-center"
+          style="min-height: 100px;">
+          <img src="https://assets.ubuntu.com/v1/6947a9e3-redhat.svg"
+            alt="Redhat logo" style="max-height: 90px;">
+        </p>
+        <footer class="p-card__footer">
+          <a class="p-link--external"
+            href="https://packages.qa.debian.org/c/cloud-init.html">
+            Get packages
+          </a>
+        </footer>
       </div>
     </div>
-    <div class="row">
-      <div class="u-equal-height">
-        <div class="p-card col-3">
-          <p class="p-card__content u-align-center">
-            <img src="https://assets.ubuntu.com/v1/887474d1-ubuntu.svg" alt="Ubuntu logo">
-          </p>
-          <footer class="p-card__footer">
-            <a class="p-link--external" href="https://launchpad.net/ubuntu/+source/cloud-init">Get packages</a>
-          </footer>
-        </div>
-        <div class="p-card col-3">
-          <p class="p-card__content u-align-center">
-            <img src="https://assets.ubuntu.com/v1/e0b23092-archlinux.svg" alt="Arch Linux logo">
-          </p>
-          <footer class="p-card__footer">
-            <a class="p-link--external" href="https://wiki.archlinux.org/index.php/Cloud-init">Get packages</a>
-          </footer>
-        </div>
-        <div class="p-card col-3">
-          <p class="p-card__content u-align-center">
-            <img src="https://assets.ubuntu.com/v1/31bd1765-centos.svg" alt="CentOS logo">
-          </p>
-          <footer class="p-card__footer">
-            <a class="p-link--external" href="https://cloud.centos.org/centos/7/images/">Get packages</a>
-          </footer>
-        </div>
-        <div class="p-card col-3">
-          <p class="p-card__content u-align-center">
-            <img src="https://assets.ubuntu.com/v1/6947a9e3-redhat.svg" alt="Redhat logo">
-          </p>
-          <footer class="p-card__footer">
-            <a class="p-link--external" href="https://packages.qa.debian.org/c/cloud-init.html">Get packages</a>
-          </footer>
-        </div>
+  </div>
+  <div class="row">
+    <div class="u-equal-height u-no-margin--top">
+      <div class="p-card col-3">
+        <p class="p-card__content u-align--center u-vertically-center"
+          style="min-height: 100px;">
+          <img src="https://assets.ubuntu.com/v1/6fa4b259-freebsd.png"
+            alt="FreeBSD logo" style="max-height: 90px;">
+        </p>
+        <footer class="p-card__footer">
+          <a class="p-link--external"
+            href="https://pellaeon.github.io/bsd-cloudinit">
+            Get packages
+          </a>
+        </footer>
+      </div>
+      <div class="p-card col-3">
+        <p class="p-card__content u-align--center u-vertically-center"
+          style="min-height: 100px;">
+          <img src="https://assets.ubuntu.com/v1/1a53bedd-fedora.svg"
+            alt="Fedora logo" style="max-height: 90px;">
+        </p>
+        <footer class="p-card__footer">
+          <a class="p-link--external"
+            href="https://getfedora.org/en/cloud/download/">
+            Get packages
+          </a>
+        </footer>
+      </div>
+      <div class="p-card col-3">
+        <p class="p-card__content u-align--center u-vertically-center"
+          style="min-height: 100px;">
+          <img src="https://assets.ubuntu.com/v1/2235d892-gentoo.png"
+            alt="Gentoo Linux logo" style="max-height: 90px;">
+        </p>
+        <footer class="p-card__footer">
+          <a class="p-link--external"
+            href="https://packages.gentoo.org/package/app-emulation/cloud-init">
+            Get packages
+          </a>
+        </footer>
+      </div>
+      <div class="p-card col-3">
+        <p class="p-card__content u-align--center u-vertically-center"
+          style="min-height: 100px;">
+          <img src="https://assets.ubuntu.com/v1/2e497b2e-opensuse.svg"
+            alt="OpenSUSE logo" style="max-height: 90px;">
+        </p>
+        <footer class="p-card__footer">
+          <a class="p-link--external"
+            href="https://launchpad.net/ubuntu/+source/cloud-init">
+            Get packages
+          </a>
+        </footer>
       </div>
     </div>
-    <div class="row">
-      <div class="u-equal-height u-no-margin--top">
-        <div class="p-card col-3">
-            <p class="p-card__content u-align-center">
-              <img src="https://assets.ubuntu.com/v1/6fa4b259-freebsd.png" alt="FreeBSD logo">
-            </p>
-            <footer class="p-card__footer">
-              <a class="p-link--external" href="https://pellaeon.github.io/bsd-cloudinit">Get packages</a>
-            </footer>
-        </div>
-        <div class="p-card col-3">
-            <p class="p-card__content u-align-center">
-              <img src="https://assets.ubuntu.com/v1/1a53bedd-fedora.svg" alt="Fedora logo">
-            </p>
-            <footer class="p-card__footer">
-              <a class="p-link--external" href="https://getfedora.org/en/cloud/download/">Get packages</a>
-            </footer>
-        </div>
-        <div class="p-card col-3">
-            <p class="p-card__content u-align-center">
-              <img src="https://assets.ubuntu.com/v1/2235d892-gentoo.png" alt="Gentoo Linux logo">
-            </p>
-            <footer class="p-card__footer">
-              <a class="p-link--external" href="https://packages.gentoo.org/package/app-emulation/cloud-init">Get packages</a>
-            </footer>
-        </div>
-        <div class="p-card col-3">
-            <p class="p-card__content u-align-center">
-              <img src="https://assets.ubuntu.com/v1/2e497b2e-opensuse.svg" alt="OpenSUSE logo">
-            </p>
-            <footer class="p-card__footer">
-              <a class="p-link--external" href="https://launchpad.net/ubuntu/+source/cloud-init">Get packages</a>
-            </footer>
-        </div>
-      </div>
-    </div>
+  </div>
 </section>
 
-<section class="p-strip--light">
-    <div class="row">
-        <h2>Source code</h2>
-        <div class="u-equal-height">
-            <div class="p-card col-4">
-              <div class="u-align--center">
-                <img src="https://assets.ubuntu.com/v1/2d779aa4-bazaar+%281%29.svg" alt="Bazaar logo">
-              </div>
-              <h3 class="p-card__title">Git</h3>
-              <p class="p-card__content u-align-center">Browse and branch from Git.</p>
-              <footer class="p-card__footer">
-                <a class="p-link--external" href="https://code.launchpad.net/cloud-init">Bazaar repository</a>
-              </footer>
-            </div>
-            <div class="p-card col-4">
-              <div class="u-align--center">
-                <img src="https://assets.ubuntu.com/v1/e59251d7-github.svg" alt="GitHub logo">
-              </div>
-              <h3 class="p-card__title">GitHub</h3>
-              <p class="p-card__content u-align-center">Browse, branch, fork or clone from GitHub.</p>
-              <footer class="p-card__footer">
-                <a class="p-link--external" href="https://github.com/cloud-init/cloud-init">GitHub repository</a>
-              </footer>
-            </div>
-            <div class="p-card col-4">
-              <div class="u-align--center">
-                <img src="https://assets.ubuntu.com/v1/d656d6b1-picto-download-orange.svg" alt="Download logo">
-              </div>
-              <h3 class="p-card__title">Download</h3>
-              <p class="p-card__content u-align-center">Download the offically released archives.</p>
-              <footer class="p-card__footer">
-                <a class="p-link--external" href="https://launchpad.net/cloud-init/+download">Download project files</a>
-              </footer>
-            </div>
-        </div>
+<section class="p-strip--light is-bordered">
+  <div class="row">
+    <div class="col-12">
+      <h2>Source code</h2>
     </div>
+    <div class="u-equal-height">
+      <div class="p-card col-4">
+        <div class="u-align--center">
+          <img src="https://assets.ubuntu.com/v1/2d779aa4-bazaar+%281%29.svg"
+            alt="Bazaar logo">
+        </div>
+        <h3 class="p-card__title">Git</h3>
+        <p class="p-card__content">
+          Browse and branch from Git.
+        </p>
+        <footer class="p-card__footer">
+          <a class="p-link--external"
+            href="https://code.launchpad.net/cloud-init">
+            Bazaar repository
+          </a>
+        </footer>
+      </div>
+      <div class="p-card col-4">
+        <div class="u-align--center">
+          <img src="https://assets.ubuntu.com/v1/e59251d7-github.svg"
+            alt="GitHub logo">
+        </div>
+        <h3 class="p-card__title">GitHub</h3>
+        <p class="p-card__content">
+          Browse, branch, fork or clone from GitHub.
+        </p>
+        <footer class="p-card__footer">
+          <a class="p-link--external"
+            href="https://github.com/cloud-init/cloud-init">
+            GitHub repository
+          </a>
+        </footer>
+      </div>
+      <div class="p-card col-4">
+        <div class="u-align--center">
+          <img src="https://assets.ubuntu.com/v1/d656d6b1-picto-download-orange.svg"
+            alt="Download logo">
+        </div>
+        <h3 class="p-card__title">Download</h3>
+        <p class="p-card__content">
+          Download the offically released archives.
+        </p>
+        <footer class="p-card__footer">
+          <a class="p-link--external"
+            href="https://launchpad.net/cloud-init/+download">
+            Download project files
+          </a>
+        </footer>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="p-strip">
+<section class="p-strip is-bordered">
     <div class="row">
       <div class="col-12">
         <h2 class="p-muted-heading">Used across the public cloud</h2>
         <ul class="p-inline-images">
           <li class="p-inline-images__item">
-            <img src="https://assets.ubuntu.com/v1/ff936628-rackspace.svg" alt="Rackspace logo" />
+            <img src="https://assets.ubuntu.com/v1/ff936628-rackspace.svg"
+              alt="Rackspace logo" />
           </li>
           <li class="p-inline-images__item">
-            <img src="https://assets.ubuntu.com/v1/39e011de-logo-ovh-300DPI.png" alt="OVH logo" />
+            <img src="https://assets.ubuntu.com/v1/39e011de-logo-ovh-300DPI.png"
+              alt="OVH logo" />
           </li>
           <li class="p-inline-images__item">
-            <img src="https://assets.ubuntu.com/v1/3006b8c7-vmware.svg" alt="VMware logo" />
+            <img src="https://assets.ubuntu.com/v1/3006b8c7-vmware.svg"
+              alt="VMware logo" />
           </li>
           <li class="p-inline-images__item">
-            <img src="https://assets.ubuntu.com/v1/2b5837e9-logo-microsoft-azure.svg" alt="Microsoft Azure logo" />
+            <img src="https://assets.ubuntu.com/v1/2b5837e9-logo-microsoft-azure.svg"
+              alt="Microsoft Azure logo" />
           </li>
           <li class="p-inline-images__item">
-            <img src="https://assets.ubuntu.com/v1/25b3d138-201509-amazon_aws_4c_en.svg" alt="Amazon Web Services logo" />
+            <img src="https://assets.ubuntu.com/v1/25b3d138-201509-amazon_aws_4c_en.svg"
+              alt="Amazon Web Services logo" />
           </li>
           <li class="p-inline-images__item">
-            <img src="https://assets.ubuntu.com/v1/f7f8709c-logo-joyent.svg" alt="Joyent logo" />
+            <img src="https://assets.ubuntu.com/v1/f7f8709c-logo-joyent.svg"
+              alt="Joyent logo" />
           </li>
           <li class="p-inline-images__item">
-            <img src="https://assets.ubuntu.com/v1/a741628b-google-cloud.svg" alt="Google Cloud Platform logo" />
+            <img src="https://assets.ubuntu.com/v1/a741628b-google-cloud.svg"
+              alt="Google Cloud Platform logo" />
           </li>
           <li class="p-inline-images__item">
-            <img src="https://assets.ubuntu.com/v1/e765a8ed-fujitsu.svg" alt="Fujitsu logo" />
+            <img src="https://assets.ubuntu.com/v1/e765a8ed-fujitsu.svg"
+              alt="Fujitsu logo" />
           </li>
         </ul>
         <p class="u-align--center">
-          <a href="https://partners.ubuntu.com/find-a-partner?programme=certified-public-cloud" class="p-link--external">See our other Ubuntu public cloud partners</a>
+          <a href="https://partners.ubuntu.com/find-a-partner?programme=certified-public-cloud"
+            class="p-link--external">
+            See our other Ubuntu public cloud partners
+          </a>
         </p>
       </div>
     </div>
@@ -201,20 +290,48 @@ layout: default
   <div class="row">
     <div class="u-equal-height">
       <div class="col-3 p-card">
-        <h3><a class="p-link--external" href="https://cloudinit.readthedocs.org/">Read the docs</a></h3>
-        <p>Always read the manual &mdash; perhaps your question has already be answered?</p>
+        <h3>
+          <a class="p-link--external"
+            href="https://cloudinit.readthedocs.org/">
+            Read the docs
+          </a>
+        </h3>
+        <p>
+          Always read the manual &mdash; perhaps your question has already be
+          answered?
+        </p>
       </div>
       <div class="col-3 p-card">
-        <h3><a class="p-link--external" href="https://webchat.freenode.net/">Chat on freenode</a></h3>
-        <p>We have an active IRC community on #cloud-init &mdash; get involved!</p>
+        <h3>
+          <a class="p-link--external"
+            href="https://webchat.freenode.net/">
+            Chat on freenode
+          </a>
+        </h3>
+        <p>
+          We have an active IRC community on #cloud-init &mdash; get involved!
+        </p>
       </div>
       <div class="col-3 p-card">
-        <h3><a class="p-link--external" href="https://stackexchange.com/search?q=cloud-init">Search on Stack Exchange</a></h3>
+        <h3>
+          <a class="p-link--external"
+            href="https://stackexchange.com/search?q=cloud-init">
+            Search on Stack Exchange
+          </a>
+        </h3>
         <p>Ask questions and search for answers at StackExchange.</p>
       </div>
       <div class="col-3 p-card">
-        <h3><a class="p-link--external" href="https://bugs.launchpad.net/cloud-init/+filebug">Report a bug</a></h3>
-        <p>Help us improve the software by flagging bugs and issues you find on Launchpad.</p>
+        <h3>
+          <a class="p-link--external"
+            href="https://bugs.launchpad.net/cloud-init/+filebug">
+            Report a bug
+          </a>
+        </h3>
+        <p>
+          Help us improve the software by flagging bugs and issues you find on
+          Launchpad.
+        </p>
       </div>
     </div>
   </div>
@@ -224,32 +341,51 @@ layout: default
   <div class="row">
     <div class="col-4 suffix-1">
       <h2>About</h2>
-      <p>cloud-init is developed and released as free software under both the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3 open source
-      license</a> and <a class="p-link--external" href="https://www.apache.org/licenses/LICENSE-2.0"> Apache License version 2.0</a>. It was originally designed for the <a class="p-link--external" href="https://www.ubuntu.com/">Ubuntu</a> distribution of Linux in Amazon EC2, but is now supported on many Linux and UNIX distributions in every major cloud.</p>
+      <p>
+        cloud-init is developed and released as free software under both the
+        <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+          GPLv3 open source license
+        </a> and
+        <a class="p-link--external"
+          href="https://www.apache.org/licenses/LICENSE-2.0">
+          Apache License version 2.0
+        </a>. It was originally designed for the
+        <a class="p-link--external" href="https://www.ubuntu.com/">
+          Ubuntu
+        </a> distribution of Linux in Amazon EC2, but is now supported on many
+        Linux and UNIX distributions in every major cloud.
+      </p>
     </div>
     <div class="col-7">
-      <div class="row">
-        <div class="col-7">
-          <h2>The team</h2>
+      <h2>The team</h2>
+      <div class="p-media-object">
+        <img src="https://assets.ubuntu.com/v1/64bd8e20-scott-moser.jpg"
+          alt="Scott Moser profile picture"
+          class="p-media-object__image p-avatar">
+        <div class="p-media-object__details">
+          <h3 class="p-media-object__title">Scott Moser</h3>
+          <p class="p-media-object__content">
+            <a class="p-link--external" href="https://ubuntu-smoser.blogspot.co.uk/">
+              Scott</a> is the primary author and active maintainer of cloud-init,
+            and is a technical leader on the Ubuntu Server Team for
+            <a class="p-link--external" href="https://www.canonical.com/">
+              Canonical
+            </a>.
+          </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-2">
-          <img src="https://assets.ubuntu.com/v1/64bd8e20-scott-moser.jpg" alt="Scott Moser profile picture" />
-        </div>
-        <div class="col-5">
-          <h3>Scott Moser</h3>
-          <p><a class="p-link--external" href="https://ubuntu-smoser.blogspot.co.uk/">Scott</a> is the primary author and active maintainer of cloud-init, and is a technical leader on the Ubuntu Server Team for <a class="p-link--external" href="https://www.canonical.com/">Canonical.</a></p>
-        </div>
-      </div>
-      <hr />
-      <div class="row">
-        <div class="col-2">
-          <img src="https://assets.ubuntu.com/v1/231a0085-joshua-harlow.jpg" alt="Joshua Harlow" />
-        </div>
-        <div class="col-5">
-          <h3>Joshua Harlow</h3>
-          <p><a class="p-link--external" href="https://launchpad.net/~harlowja">Joshua</a> is an active maintainer of cloud-init, hacking on clouds for <a class="p-link--external" href="https://www.godaddy.com/">GoDaddy.</a></p>
+      <div class="p-media-object">
+        <img src="https://assets.ubuntu.com/v1/231a0085-joshua-harlow.jpg"
+          alt="Joshua Harlow profile picture"
+          class="p-media-object__image p-avatar">
+        <div class="p-media-object__details">
+          <h3 class="p-media-object__title">Joshua Harlow</h3>
+          <p class="p-media-object__content">
+            <a class="p-link--external" href="https://launchpad.net/~harlowja">
+              Joshua</a> is an active maintainer of cloud-init, hacking on clouds for
+            <a class="p-link--external" href="https://www.godaddy.com/">
+              GoDaddy</a>.
+          </p>
         </div>
       </div>
     </div>
