@@ -1,13 +1,9 @@
 @import "settings_colors";
 
-@import "vanilla-brochure-theme/scss/theme";
-@include vanilla-brochure-theme;
+@import "vanilla-framework/scss/build";
 
 @import "patterns_strip";
 @include cloud-init-p-strips;
-
-@import "patterns_lists";
-@include cloud-init-p-lists;
 
 @import "patterns_heading-icon";
 @include cloud-init-p-heading-icon;

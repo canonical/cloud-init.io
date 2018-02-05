@@ -11,9 +11,3 @@
     }
   }
 }
-
-@mixin cloud-init-list-is-ticked {
-  .is-ticked {
-    background-image: svg-tick($color-brand);
-  }
-}
