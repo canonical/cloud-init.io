@@ -1,12 +1,3 @@
 @import "settings_colors";
 
 @import "vanilla-framework/scss/build";
-
-@import "patterns_strip";
-@include cloud-init-p-strips;
-
-@import "patterns_heading-icon";
-@include cloud-init-p-heading-icon;
-
-@import "patterns_avatar";
-@include cloud-init-p-avatar;
