@@ -13,6 +13,20 @@ description: > # this means to ignore newlines until "baseurl:"
   It works with Chef, Puppet, Ansible, Salt and easily integrates with home-grown solutions.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://cloud-init.org" # the base hostname & protocol for your site
+exclude: [
+  'LICENCE',
+  'LICENSE',
+  'README.md',
+  'gulpfile.babel.js',
+  'package.json',
+  'vendor/bundle',
+  'Dockerfile',
+  'Gemfile*',
+  'nginx.conf',
+  'node_modules',
+  'run',
+  'yarn.lock'
+]
 
 # Build settings
 markdown: kramdown
