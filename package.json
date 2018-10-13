@@ -7,7 +7,7 @@
     "test": "yarn run lint-nginx && yarn run lint-scss",
     "clean": "rm -rf node_modules yarn-error.log css static/css *.log *.sqlite _site/ build/ .jekyll-metadata .bundle",
     "watch": "watch -p 'static/sass/**/*.scss' -c 'yarn run build'",
-    "build": "node-sass --include-path node_modules _sass --output css && postcss --use autoprefixer --replace 'css/**/*.css' && postcss --use cssnano --dir static/minified 'css/**/*.css'",
+    "build": "cp node_modules/global-nav/dist/index.js js/global-nav.js && node-sass --include-path node_modules _sass --output css && postcss --use autoprefixer --replace 'css/**/*.css' && postcss --use cssnano --dir static/minified 'css/**/*.css'",
     "serve": "bundle exec jekyll serve -P ${PORT} -H 0.0.0.0"
   },
   "repository": {
@@ -21,24 +21,25 @@
   },
   "homepage": "https://github.com/ubuntudesign/cloud-init#readme",
   "dependencies": {
+    "autoprefixer": "^6.3.1",
     "browser-sync": "^2.11.1",
+    "cssnano": "^3.10.0",
+    "global-nav": "^1.1.1",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-sass": "^2.1.1",
     "gulp-sourcemaps": "*",
-    "npm": "*",
-    "vanilla-framework": "1.7.0",
-    "watch-cli": "^0.2.2",
-    "sass-lint": "^1.10.2",
-    "postcss-cli": "^4.1.0",
     "node-sass": "^4.5.3",
-    "cssnano": "^3.10.0",
-    "autoprefixer": "^6.3.1"
+    "npm": "*",
+    "postcss-cli": "^4.1.0",
+    "sass-lint": "^1.10.2",
+    "vanilla-framework": "1.8.0",
+    "watch-cli": "^0.2.2"
   },
   "devDependencies": {
     "gulp-gh-pages": "^0.5.4",
     "gulp-uglify": "^1.5.3",
-    "sass-lint": "^1.10.2",
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.5.3",
+    "sass-lint": "^1.10.2"
   }
 }
