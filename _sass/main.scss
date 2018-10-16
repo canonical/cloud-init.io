@@ -2,7 +2,42 @@
 
 @import "vanilla-framework/scss/build";
 
-// XXX Fix for inline image SVGs that do not have dimensions set
-.p-inline-images__item > img {
-  width: 100%;
+// XXX Fix for inline image SVGs
+.p-fluid-grid--centered {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.p-fluid-grid,
+.p-fluid-grid--centered {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: center;
+}
+
+.p-logo-image {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-fluid-grid__item--small {
+  min-width: 150px;
+  width: 21.875%;
+
+  @media screen and (min-width: 620px) {
+    width: 15.04854%;
+  }
 }
