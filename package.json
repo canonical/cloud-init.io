@@ -27,7 +27,7 @@
     "global-nav": "1.1.1",
     "gulp": "4.0.0",
     "gulp-autoprefixer": "3.1.1",
-    "gulp-sass": "2.3.2",
+    "gulp-sass": "4.0.2",
     "gulp-sourcemaps": "*",
     "node-sass": "4.5.3",
     "npm": "*",
