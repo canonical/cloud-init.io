@@ -22,24 +22,24 @@
   "homepage": "https://github.com/ubuntudesign/cloud-init#readme",
   "dependencies": {
     "autoprefixer": "6.7.7",
-    "browser-sync": "2.18.11",
+    "browser-sync": "2.26.3",
     "cssnano": "3.10.0",
-    "global-nav": "1.1.1",
+    "global-nav": "1.2.1",
     "gulp": "4.0.0",
     "gulp-autoprefixer": "3.1.1",
     "gulp-sass": "4.0.2",
     "gulp-sourcemaps": "*",
-    "node-sass": "4.5.3",
+    "node-sass": "4.11.0",
     "npm": "*",
     "postcss-cli": "4.1.1",
-    "sass-lint": "1.10.2",
-    "vanilla-framework": "1.8.0",
+    "sass-lint": "1.12.1",
+    "vanilla-framework": "1.8.1",
     "watch-cli": "0.2.3"
   },
   "devDependencies": {
     "gulp-gh-pages": "0.5.4",
     "gulp-uglify": "3.0.1",
-    "node-sass": "4.5.3",
-    "sass-lint": "1.10.2"
+    "node-sass": "4.11.0",
+    "sass-lint": "1.12.1"
   }
 }
