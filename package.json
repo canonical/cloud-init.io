@@ -24,7 +24,7 @@
     "autoprefixer": "9.4.7",
     "browser-sync": "2.26.3",
     "cssnano": "3.10.0",
-    "global-nav": "1.2.1",
+    "global-nav": "2.0.1",
     "gulp": "4.0.0",
     "gulp-autoprefixer": "3.1.1",
     "gulp-sass": "4.0.2",
