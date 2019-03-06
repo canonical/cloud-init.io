@@ -354,12 +354,12 @@ atob@~1.1.0:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/atob/-/atob-1.1.3.tgz#95f13629b12c3a51a5d215abdce2aa9f32f80773"
 
-autoprefixer@9.4.7:
-  version "9.4.7"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.4.7.tgz#f997994f9a810eae47b38fa6d8a119772051c4ff"
+autoprefixer@9.4.10:
+  version "9.4.10"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.4.10.tgz#e1be61fc728bacac8f4252ed242711ec0dcc6a7b"
   dependencies:
-    browserslist "^4.4.1"
-    caniuse-lite "^1.0.30000932"
+    browserslist "^4.4.2"
+    caniuse-lite "^1.0.30000940"
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
     postcss "^7.0.14"
@@ -589,13 +589,13 @@ browserslist@^1.3.6, browserslist@^1.5.2, browserslist@^1.7.6:
     caniuse-db "^1.0.30000639"
     electron-to-chromium "^1.2.7"
 
-browserslist@^4.4.1:
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.4.1.tgz#42e828954b6b29a7a53e352277be429478a69062"
+browserslist@^4.4.2:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.4.2.tgz#6ea8a74d6464bb0bd549105f659b41197d8f0ba2"
   dependencies:
-    caniuse-lite "^1.0.30000929"
-    electron-to-chromium "^1.3.103"
-    node-releases "^1.1.3"
+    caniuse-lite "^1.0.30000939"
+    electron-to-chromium "^1.3.113"
+    node-releases "^1.1.8"
 
 bs-recipes@1.3.4:
   version "1.3.4"
@@ -716,9 +716,9 @@ caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
   version "1.0.30000670"
   resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000670.tgz#90d33b79e3090e25829c311113c56d6b1788bf43"
 
-caniuse-lite@^1.0.30000929, caniuse-lite@^1.0.30000932:
-  version "1.0.30000938"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000938.tgz#b64bf1427438df40183fce910fe24e34feda7a3f"
+caniuse-lite@^1.0.30000939, caniuse-lite@^1.0.30000940:
+  version "1.0.30000940"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000940.tgz#19f2b1497fbfa5b96b615963097c3757f27989ce"
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
@@ -1479,7 +1479,7 @@ electron-to-chromium@^1.2.7:
   version "1.3.11"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.11.tgz#744761df1d67b492b322ce9aa0aba5393260eb61"
 
-electron-to-chromium@^1.3.103:
+electron-to-chromium@^1.3.113:
   version "1.3.113"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.113.tgz#b1ccf619df7295aea17bc6951dc689632629e4a9"
 
@@ -2323,9 +2323,9 @@ global-modules@^1.0.0:
     is-windows "^1.0.1"
     resolve-dir "^1.0.0"
 
-global-nav@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/global-nav/-/global-nav-2.0.1.tgz#59c2a97b67f36eba687dfe7388427c935c729739"
+global-nav@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/global-nav/-/global-nav-2.0.3.tgz#c56e9014fba3af0ffd2b65dd0f49176b2ef7b55a"
 
 global-prefix@^1.0.1:
   version "1.0.2"
@@ -2502,13 +2502,15 @@ gulp-sourcemaps@1.6.0:
     through2 "^2.0.0"
     vinyl "^1.0.0"
 
-gulp-uglify@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/gulp-uglify/-/gulp-uglify-3.0.1.tgz#8d3eee466521bea6b10fd75dff72adf8b7ea2d97"
+gulp-uglify@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/gulp-uglify/-/gulp-uglify-3.0.2.tgz#5f5b2e8337f879ca9dec971feb1b82a5a87850b0"
   dependencies:
+    array-each "^1.0.1"
+    extend-shallow "^3.0.2"
     gulplog "^1.0.0"
     has-gulplog "^0.1.0"
-    lodash "^4.13.1"
+    isobject "^3.0.1"
     make-error-cause "^1.1.1"
     safe-buffer "^5.1.2"
     through2 "^2.0.0"
@@ -3551,7 +3553,7 @@ lodash@^4.0.0, lodash@^4.3.0:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
-lodash@^4.13.1, lodash@^4.17.10:
+lodash@^4.17.10:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
 
@@ -3960,9 +3962,9 @@ node-pre-gyp@^0.6.29:
     tar "^2.2.1"
     tar-pack "^3.4.0"
 
-node-releases@^1.1.3:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.7.tgz#b09a10394d0ed8f7778f72bb861dde68b146303b"
+node-releases@^1.1.8:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.9.tgz#70d0985ec4bf7de9f08fc481f5dae111889ca482"
   dependencies:
     semver "^5.3.0"
 
