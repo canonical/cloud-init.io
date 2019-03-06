@@ -17,7 +17,6 @@ exclude: [
   'LICENCE',
   'LICENSE',
   'README.md',
-  'gulpfile.babel.js',
   'package.json',
   'vendor/bundle',
   'Dockerfile',
