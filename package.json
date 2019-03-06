@@ -7,7 +7,9 @@
     "test": "yarn run lint-nginx && yarn run lint-scss",
     "clean": "rm -rf node_modules yarn-error.log css static/css *.log *.sqlite _site/ build/ .jekyll-metadata .bundle",
     "watch": "watch -p 'static/sass/**/*.scss' -c 'yarn run build'",
-    "build": "cp node_modules/global-nav/dist/index.js js/global-nav.js && node-sass --include-path node_modules _sass --output css && postcss --use autoprefixer --replace 'css/**/*.css' && postcss --use cssnano --dir static/minified 'css/**/*.css'",
+    "build": "yarn run build-css && yarn run build-js",
+    "build-css": "node-sass --include-path node_modules _sass --source-map true --output-style compressed --output css && postcss --use autoprefixer --replace 'css/**/*.css'",
+    "build-js": "cp node_modules/global-nav/dist/index.js js/global-nav.js",
     "serve": "bundle exec jekyll serve -P ${PORT} -H 0.0.0.0"
   },
   "repository": {
