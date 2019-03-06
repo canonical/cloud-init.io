@@ -31,7 +31,7 @@
     "gulp-sourcemaps": "*",
     "node-sass": "4.11.0",
     "npm": "*",
-    "postcss-cli": "4.1.1",
+    "postcss-cli": "6.1.2",
     "sass-lint": "1.12.1",
     "vanilla-framework": "1.8.1",
     "watch-cli": "0.2.3"
