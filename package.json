@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "global-nav": "2.0.3",
-    "vanilla-framework": "1.8.1"
+    "vanilla-framework": "2.0.1"
   },
   "devDependencies": {
     "autoprefixer": "9.6.0",
