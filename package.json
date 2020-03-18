@@ -5,7 +5,7 @@
     "build-js": "cp node_modules/global-nav/dist/index.js js/global-nav.js",
     "clean": "rm -rf node_modules yarn-error.log css static/css *.log *.sqlite _site/ build/ .jekyll-metadata .bundle",
     "lint-nginx": "gixy nginx.conf",
-    "lint-scss": "sass-lint static/**/*.scss --verbose --no-exit",
+    "lint-scss": "stylelint _sass/**/*.scss",
     "serve": "bundle exec jekyll serve -P ${PORT} -H 0.0.0.0",
     "test": "yarn run lint-nginx && yarn run lint-scss",
     "watch": "watch -p 'static/sass/**/*.scss' -c 'yarn run build'"
@@ -18,7 +18,9 @@
     "autoprefixer": "9.7.4",
     "node-sass": "4.13.1",
     "postcss-cli": "7.1.0",
-    "sass-lint": "1.13.1",
+    "stylelint": "13.2.1",
+    "stylelint-config-standard": "20.0.0",
+    "stylelint-order": "4.0.0",
     "watch-cli": "0.2.3"
   }
 }
