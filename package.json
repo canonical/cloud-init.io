@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "global-nav": "2.0.3",
-    "vanilla-framework": "2.9.0"
+    "vanilla-framework": "2.10.1"
   },
   "devDependencies": {
-    "autoprefixer": "9.7.5",
-    "node-sass": "4.13.1",
-    "postcss-cli": "7.1.0",
-    "stylelint": "13.2.1",
+    "autoprefixer": "9.7.6",
+    "node-sass": "4.14.0",
+    "postcss-cli": "7.1.1",
+    "stylelint": "13.3.3",
     "stylelint-config-standard": "20.0.0",
     "stylelint-order": "4.0.0",
     "watch-cli": "0.2.3"
