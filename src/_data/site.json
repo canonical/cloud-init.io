@@ -1,0 +1,6 @@
+{
+  "title": "cloud-init",
+  "description": "cloud-init allows you to launch an instance which will integrate with a configuration management solution of your choice. It works with Chef, Puppet, Ansible, Salt and easily integrates with home-grown solutions.",
+  "baseUrl": "",
+  "url": "https://cloud-init.io"
+}

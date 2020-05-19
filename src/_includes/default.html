@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - The standard for customising cloud instances</title>
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <title>{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %} - The standard for customising cloud instances</title>
+    <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
 
     <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' }}">
+    <link rel="canonical" href="{{ site.url }}{{ url }}">
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
