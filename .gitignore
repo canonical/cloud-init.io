@@ -58,7 +58,5 @@ env[23]/
 *.css
 
 # Project specific
-/js/global-nav.js
-
 .dotrun.json
 src/js/global-nav.js
