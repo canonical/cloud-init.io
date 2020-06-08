@@ -16,17 +16,17 @@
   },
   "dependencies": {
     "global-nav": "2.0.3",
-    "vanilla-framework": "2.10.1"
+    "vanilla-framework": "2.12.1"
   },
   "devDependencies": {
-    "@11ty/eleventy": "0.10.0",
-    "autoprefixer": "9.7.6",
+    "@11ty/eleventy": "0.11.0",
+    "autoprefixer": "9.8.0",
     "concurrently": "5.2.0",
-    "node-sass": "4.14.0",
+    "node-sass": "4.14.1",
     "postcss-cli": "7.1.1",
-    "stylelint": "13.3.3",
+    "stylelint": "13.6.0",
     "stylelint-config-standard": "20.0.0",
-    "stylelint-order": "4.0.0",
+    "stylelint-order": "4.1.0",
     "watch-cli": "0.2.3"
   }
 }
