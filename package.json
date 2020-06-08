@@ -1,13 +1,16 @@
 {
   "scripts": {
-	  "start": "yarn run build && yarn run serve",
-    "build": "yarn run build-css && yarn run build-js",
-    "build-css": "node-sass --include-path node_modules _sass --source-map true --output-style compressed --output css && postcss --use autoprefixer --replace 'css/**/*.css'",
-    "build-js": "cp node_modules/global-nav/dist/index.js js/global-nav.js",
-    "clean": "rm -rf node_modules yarn-error.log css static/css *.log *.sqlite _site/ build/ .jekyll-metadata .bundle",
+    "build": "yarn run build-css && yarn run build-js && yarn run build-site",
+    "build-site": "eleventy --formats=html,scss,css,js --input=src --output=_site",
+    "build-css": "node-sass --include-path node_modules src/sass --source-map true --output-style compressed --output src/css && postcss --use autoprefixer --replace 'src/css/**/*.css'",
+    "build-js": "cp node_modules/global-nav/dist/index.js src/js/global-nav.js",
+    "watch-css": "watch -p 'src/sass/**/*.scss' -c 'yarn run build-css'",
+    "watch-js": "watch -p 'node_modules/global-nav/dist/index.js' -c 'yarn run build-js'",
+    "clean": "rm -rf node_modules yarn-error.log src/css *.log _site/",
     "lint-nginx": "gixy nginx.conf",
-    "lint-scss": "stylelint _sass/**/*.scss",
-    "serve": "bundle exec jekyll serve -P ${PORT} -H 0.0.0.0",
+    "lint-scss": "stylelint src/sass/**/*.scss",
+    "serve": "eleventy --formats=html,scss,css,js --input=src --output=_site --watch --serve --port $PORT",
+    "start": "yarn run build && concurrently --raw 'yarn run watch-css' 'yarn run watch-js' 'yarn run serve'",
     "test": "yarn run lint-nginx && yarn run lint-scss",
     "watch": "watch -p 'static/sass/**/*.scss' -c 'yarn run build'"
   },
@@ -16,7 +19,9 @@
     "vanilla-framework": "2.10.1"
   },
   "devDependencies": {
+    "@11ty/eleventy": "0.10.0",
     "autoprefixer": "9.7.6",
+    "concurrently": "5.2.0",
     "node-sass": "4.14.0",
     "postcss-cli": "7.1.1",
     "stylelint": "13.3.3",
