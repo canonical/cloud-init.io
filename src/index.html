@@ -19,10 +19,15 @@ layout: default
   </div>
 </header>
 
-<section class="p-strip--light">
+<section class="p-strip--header">
   <div class="row u-vertically-center">
     <div class="col-7">
       <h1>The standard for customising cloud instances</h1>
+      <div>
+        <a class="github-button" data-size="large" href="https://github.com/canonical/cloud-init" aria-label="Follow @canonical on GitHub"></a>
+        <a class="github-button" data-size="large" href="https://github.com/canonical/cloud-init" data-icon="octicon-star" data-show-count="true" aria-label="Star canonical/cloud-init on GitHub"></a>
+        <a class="github-button" data-size="large" href="https://github.com/canonical/cloud-init/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork canonical/cloud-init on GitHub"></a>
+      </div>
     </div>
     <div class="col-5">
       <div class="u-embedded-media">
@@ -32,7 +37,7 @@ layout: default
   </div>
 </section>
 
-<section class="p-strip is-bordered">
+<section class="p-strip--light">
   <div class="row">
     <div class="col-8">
       <p>Cloud images are operating system templates and every instance starts out as an identical clone of every other instance. It is the user data that gives every cloud instance its personality and cloud-init is the tool that applies user data to your instances automatically.</p>
@@ -51,9 +56,9 @@ layout: default
   </div>
 </section>
 
-<section class="p-strip">
+<section class="p-strip is-deep">
   <div class="row">
-    <div class="col-8">
+    <div class="col-8 u-sv3">
       <h2>Works with many popular operating systems</h2>
       <p>While cloud-init started life in Ubuntu, it is now available for most major Linux and FreeBSD operating systems. For cloud image providers, then cloud-init handles many of the differences between cloud vendors automatically &mdash; for example, the official Ubuntu cloud images are identical across all public and private clouds.</p>
     </div>
@@ -118,59 +123,56 @@ layout: default
       <h2>Source code</h2>
     </div>
   </div>
-  <div class="row">
-        <div class="p-card col-4">
-          <h3 class="p-card__title">Git</h3>
-          <p class="p-card__content">Browse and branch from Git.</p>
-          <a class="p-link--external" href="https://code.launchpad.net/cloud-init">Git repository</a>
-        </div>
-        <div class="p-card col-4">
-          <h3 class="p-card__title">GitHub</h3>
-          <p class="p-card__content">Browse, branch, fork or clone from GitHub.</p>
-          <a class="p-link--external" href="https://github.com/cloud-init/cloud-init">GitHub repository</a>
-        </div>
-        <div class="p-card col-4">
-          <h3 class="p-card__title">Download</h3>
-          <p class="p-card__content">Download the officially released archives.</p>
-          <a class="p-link--external" href="https://launchpad.net/cloud-init/+download">Download project files</a>
-        </div>
-      </div>
+  <div class="row u-equal-height">
+    <div class="p-card col-6">
+      <h3 class="p-card__title">GitHub</h3>
+      <p class="p-card__content">Browse, branch, fork or clone from GitHub.</p>
+      <a class="p-link--external" href="https://github.com/canonical/cloud-init">GitHub repository</a>
+    </div>
+    <div class="p-card col-6">
+      <h3 class="p-card__title">Download</h3>
+      <p class="p-card__content">Download the officially released archives.</p>
+      <a class="p-link--external" href="https://launchpad.net/cloud-init/+download">Download project files</a>
+    </div>
+  </div>
 </section>
 
 <section class="p-strip">
   <div class="row">
     <h2 class="p-muted-heading u-align-text--center">Used across the public cloud</h2>
   </div>
-  <div class="row">
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/a1e6f331-2018-logo-rackspace.svg" alt="Rackspace">
-    </div>
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/2274a3e2-2018-logo-OVH.svg" alt="OVH">
-    </div>
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/6aec3a9f-2018-logo-vmware.svg" alt="VMware">
-    </div>
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/6d027c12-2018-logo-Microsoft-Azure.svg" alt="Microsoft Azure">
-    </div>
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/b439df76-2018-logo-AWS.svg" alt="Amazon Web Services">
-    </div>
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/bebc29f2-2018-logo-Joyent.svg" alt="Joyent">
-    </div>
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/8d9986ed-2018-logo-Fujitsu.svg" alt="Fujitsu">
-    </div>
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/5b0a0e80-2018-logo-GCP.svg" alt="Google Cloud Platform">
-    </div>
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/f1d885ce-Oracle-cloud.png?w=144" width="144" alt="Oracle Cloud" style="padding-top:3rem;">
-    </div>
+  <div class="u-fixed-width">
+    <ul class="p-inline-images u-no-margin--bottom">
+      <li class="p-inline-images__item">
+        <img class="p-inline-images__logo" src="https://assets.ubuntu.com/v1/a1e6f331-2018-logo-rackspace.svg" alt="Rackspace">
+      </li>
+      <li class="p-inline-images__item">
+        <img src="https://assets.ubuntu.com/v1/2274a3e2-2018-logo-OVH.svg" alt="OVH">
+      </li>
+      <li class="p-inline-images__item">
+        <img class="p-inline-images__logo" src="https://assets.ubuntu.com/v1/6aec3a9f-2018-logo-vmware.svg" alt="VMware">
+      </li>
+      <li class="p-inline-images__item">
+        <img src="https://assets.ubuntu.com/v1/d31f722d-Partner-Microsoft-Azure-logo.png?w=120" alt="Microsoft Azure">
+      </li>
+      <li class="p-inline-images__item">
+        <img class="p-inline-images__logo" src="https://assets.ubuntu.com/v1/43d45da9-Anbox-logo-aws.png" alt="Amazon Web Services">
+      </li>
+      <li class="p-inline-images__item">
+        <img class="p-inline-images__logo" src="https://assets.ubuntu.com/v1/bebc29f2-2018-logo-Joyent.svg" alt="Joyent">
+      </li>
+      <li class="p-inline-images__item">
+        <img class="p-inline-images__logo" src="https://assets.ubuntu.com/v1/8d9986ed-2018-logo-Fujitsu.svg" alt="Fujitsu">
+      </li>
+      <li class="p-inline-images__item">
+        <img class="p-inline-images__logo" src="https://assets.ubuntu.com/v1/410984a3-Google-cloud-platform-stacked.svg" style="height:7rem;" alt="Google Cloud Platform">
+      </li>
+      <li class="p-inline-images__item">
+        <img src="https://assets.ubuntu.com/v1/debf01e1-Oracle-Cloud-Logo-350.png?w=144" alt="Oracle Cloud">
+      </li>
+    </ul>
     <div class="row u-align--center">
-      <a href="https://partners.ubuntu.com/find-a-partner?programme=certified-public-cloud" class="p-link--external">See our other Ubuntu public cloud partners</a>
+      <a href="https://canonical.com/partners/find-a-partner?filters=public-cloud" class="p-link--external">See our other Ubuntu public cloud partners</a>
     </div>
   </div>
 </section>
@@ -198,9 +200,9 @@ layout: default
     </div>
     <div class="col-3 p-card">
       <h4>
-        <a class="p-link--external" href="https://stackexchange.com/search?q=cloud-init">Search on Stack Exchange</a>
+        <a class="p-link--external" href="https://ubuntu.com/blog/cloud-instance-initialisation-with-cloud-init">Read the whitepaper</a>
       </h4>
-      <p>Ask questions and search for answers at StackExchange.</p>
+      <p>Cloud Instance Initialisation with cloud-init.</p>
     </div>
     <div class="col-3 p-card">
       <h4>
@@ -220,79 +222,5 @@ layout: default
   </div>
 </section>
 
-<section class="p-strip--light">
-  <div class="row">
-    <div class="col-12">
-      <h2>The team</h2>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-3">
-      <div class="p-media-object">
-        <img src="https://assets.ubuntu.com/v1/25f16ae4-Joshua-Powers.jpeg" alt="Scott Moser profile picture" class="p-media-object__image is-round">
-        <div class="p-media-object__details">
-          <h3 class="p-media-object__title">Joshua Powers</h3>
-          <p class="p-media-object__content">Josh is the Engineering Manager of the Ubuntu Server team at Canonical.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-3">
-      <div class="p-media-object">
-        <img src="https://assets.ubuntu.com/v1/5ddb324e-Ryan-Harper.jpeg" alt="Scott Moser profile picture" class="p-media-object__image is-round">
-        <div class="p-media-object__details">
-          <h3 class="p-media-object__title">Ryan Harper</h3>
-          <p class="p-media-object__content">Ryan is a core developer of cloud-init at Canonical.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-3">
-      <div class="p-media-object">
-        <img src="https://assets.ubuntu.com/v1/ac3077b5-Chad-Smith.png" alt="Scott Moser profile picture" class="p-media-object__image is-round">
-        <div class="p-media-object__details">
-          <h3 class="p-media-object__title">Chad Smith</h3>
-          <p class="p-media-object__content">Chad is a core developer of cloud-init at Canonical.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-3">
-      <div class="p-media-object">
-        <img src="https://assets.ubuntu.com/v1/4e6646e1-Dan-Watkins.jpeg" alt="Scott Moser profile picture" class="p-media-object__image is-round">
-        <div class="p-media-object__details">
-          <h3 class="p-media-object__title">Dan Watkins</h3>
-          <p class="p-media-object__content">Dan is a core developer of cloud-init at Canonical.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-3">
-      <div class="p-media-object">
-        <img src="https://assets.ubuntu.com/v1/1833cb79-Paride-Legovini.png" alt="Scott Moser profile picture" class="p-media-object__image is-round">
-        <div class="p-media-object__details">
-          <h3 class="p-media-object__title">Paride Legovini</h3>
-          <p class="p-media-object__content">Paride is a QA engineer on the Ubuntu Server team at Canonical.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-3">
-      <div class="p-media-object">
-        <img src="https://assets.ubuntu.com/v1/64bd8e20-scott-moser.jpg" alt="Scott Moser profile picture" class="p-media-object__image is-round">
-        <div class="p-media-object__details">
-          <h3 class="p-media-object__title">Scott Moser</h3>
-          <p class="p-media-object__content">Scott is the original author and an active maintainer of cloud-init, who works at Cisco.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-3">
-      <div class="p-media-object">
-        <img src="https://assets.ubuntu.com/v1/231a0085-joshua-harlow.jpg" alt="Scott Moser profile picture" class="p-media-object__image is-round">
-        <div class="p-media-object__details">
-          <h3 class="p-media-object__title">Joshua Harlow</h3>
-          <p class="p-media-object__content">Joshua is an active contributor to cloud-init, who works at PlusAI.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <script src="/js/global-nav.js"></script>
 <script>canonicalGlobalNav.createNav({maxWidth: '72rem'});</script>
