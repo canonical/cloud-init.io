@@ -19,7 +19,7 @@ layout: default
   </div>
 </header>
 
-<section class="p-strip--light">
+<section class="p-strip--header">
   <div class="row u-vertically-center">
     <div class="col-7">
       <h1>The standard for customising cloud instances</h1>
@@ -37,7 +37,7 @@ layout: default
   </div>
 </section>
 
-<section class="p-strip is-bordered">
+<section class="p-strip--light">
   <div class="row">
     <div class="col-8">
       <p>Cloud images are operating system templates and every instance starts out as an identical clone of every other instance. It is the user data that gives every cloud instance its personality and cloud-init is the tool that applies user data to your instances automatically.</p>
@@ -56,9 +56,9 @@ layout: default
   </div>
 </section>
 
-<section class="p-strip">
+<section class="p-strip is-deep">
   <div class="row">
-    <div class="col-8">
+    <div class="col-8 u-sv3">
       <h2>Works with many popular operating systems</h2>
       <p>While cloud-init started life in Ubuntu, it is now available for most major Linux and FreeBSD operating systems. For cloud image providers, then cloud-init handles many of the differences between cloud vendors automatically &mdash; for example, the official Ubuntu cloud images are identical across all public and private clouds.</p>
     </div>
@@ -124,51 +124,53 @@ layout: default
     </div>
   </div>
   <div class="row u-equal-height">
-      <div class="p-card col-6">
-        <h3 class="p-card__title">GitHub</h3>
-        <p class="p-card__content">Browse, branch, fork or clone from GitHub.</p>
-        <a class="p-link--external" href="https://github.com/canonical/cloud-init">GitHub repository</a>
-      </div>
-      <div class="p-card col-6">
-        <h3 class="p-card__title">Download</h3>
-        <p class="p-card__content">Download the officially released archives.</p>
-        <a class="p-link--external" href="https://launchpad.net/cloud-init/+download">Download project files</a>
-      </div>
-      </div>
+    <div class="p-card col-6">
+      <h3 class="p-card__title">GitHub</h3>
+      <p class="p-card__content">Browse, branch, fork or clone from GitHub.</p>
+      <a class="p-link--external" href="https://github.com/canonical/cloud-init">GitHub repository</a>
+    </div>
+    <div class="p-card col-6">
+      <h3 class="p-card__title">Download</h3>
+      <p class="p-card__content">Download the officially released archives.</p>
+      <a class="p-link--external" href="https://launchpad.net/cloud-init/+download">Download project files</a>
+    </div>
+  </div>
 </section>
 
 <section class="p-strip">
   <div class="row">
     <h2 class="p-muted-heading u-align-text--center">Used across the public cloud</h2>
   </div>
-  <div class="row">
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/a1e6f331-2018-logo-rackspace.svg" alt="Rackspace">
-    </div>
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/2274a3e2-2018-logo-OVH.svg" alt="OVH">
-    </div>
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/6aec3a9f-2018-logo-vmware.svg" alt="VMware">
-    </div>
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/6d027c12-2018-logo-Microsoft-Azure.svg" alt="Microsoft Azure">
-    </div>
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/b439df76-2018-logo-AWS.svg" alt="Amazon Web Services">
-    </div>
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/bebc29f2-2018-logo-Joyent.svg" alt="Joyent">
-    </div>
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/8d9986ed-2018-logo-Fujitsu.svg" alt="Fujitsu">
-    </div>
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/5b0a0e80-2018-logo-GCP.svg" alt="Google Cloud Platform">
-    </div>
-    <div class="col-small-2 col-medium-2 col-2">
-      <img src="https://assets.ubuntu.com/v1/f1d885ce-Oracle-cloud.png?w=144" width="144" alt="Oracle Cloud" style="padding-top:3rem;">
-    </div>
+  <div class="u-fixed-width">
+    <ul class="p-inline-images u-no-margin--bottom">
+      <li class="p-inline-images__item">
+        <img class="p-inline-images__logo" src="https://assets.ubuntu.com/v1/a1e6f331-2018-logo-rackspace.svg" alt="Rackspace">
+      </li>
+      <li class="p-inline-images__item">
+        <img src="https://assets.ubuntu.com/v1/2274a3e2-2018-logo-OVH.svg" alt="OVH">
+      </li>
+      <li class="p-inline-images__item">
+        <img class="p-inline-images__logo" src="https://assets.ubuntu.com/v1/6aec3a9f-2018-logo-vmware.svg" alt="VMware">
+      </li>
+      <li class="p-inline-images__item">
+        <img src="https://assets.ubuntu.com/v1/d31f722d-Partner-Microsoft-Azure-logo.png?w=120" alt="Microsoft Azure">
+      </li>
+      <li class="p-inline-images__item">
+        <img class="p-inline-images__logo" src="https://assets.ubuntu.com/v1/43d45da9-Anbox-logo-aws.png" alt="Amazon Web Services">
+      </li>
+      <li class="p-inline-images__item">
+        <img class="p-inline-images__logo" src="https://assets.ubuntu.com/v1/bebc29f2-2018-logo-Joyent.svg" alt="Joyent">
+      </li>
+      <li class="p-inline-images__item">
+        <img class="p-inline-images__logo" src="https://assets.ubuntu.com/v1/8d9986ed-2018-logo-Fujitsu.svg" alt="Fujitsu">
+      </li>
+      <li class="p-inline-images__item">
+        <img class="p-inline-images__logo" src="https://assets.ubuntu.com/v1/410984a3-Google-cloud-platform-stacked.svg" style="height:7rem;" alt="Google Cloud Platform">
+      </li>
+      <li class="p-inline-images__item">
+        <img src="https://assets.ubuntu.com/v1/debf01e1-Oracle-Cloud-Logo-350.png?w=144" alt="Oracle Cloud">
+      </li>
+    </ul>
     <div class="row u-align--center">
       <a href="https://partners.ubuntu.com/find-a-partner?programme=certified-public-cloud" class="p-link--external">See our other Ubuntu public cloud partners</a>
     </div>
