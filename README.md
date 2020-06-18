@@ -15,6 +15,9 @@ dotrun
 
 Once the containers are setup, you can visit <http://127.0.0.1:8009> in your browser.
 
+# Deploy
+You can find the deployment config in the deploy folder.
+
 ## Licence
 
 Code licensed [LGPLv3](http://opensource.org/licenses/lgpl-3.0.html) by [Canonical Ltd.](http://www.canonical.com/).
