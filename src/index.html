@@ -222,5 +222,11 @@ layout: default
   </div>
 </section>
 
-<script src="/js/global-nav.js"></script>
-<script>canonicalGlobalNav.createNav({maxWidth: '72rem'});</script>
+<script src="/js/modules/cookie-policy.js"></script>
+<script src="/js/modules/global-nav.js"></script>
+<script>
+  canonicalGlobalNav.createNav({
+    maxWidth: '72rem',
+  });
+  cpNs.cookiePolicy();
+</script>

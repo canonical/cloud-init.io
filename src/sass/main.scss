@@ -1,6 +1,9 @@
 @import "settings_colors";
 @import "vanilla-framework/scss/build";
 
+// import cookie policy
+@import "@canonical/cookie-policy/build/css/cookie-policy";
+
 // XXX Fix for inline image SVGs
 .p-fluid-grid--centered {
   -ms-flex-pack: distribute;

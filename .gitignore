@@ -59,5 +59,6 @@ env[23]/
 
 # Project specific
 .dotrun.json
-src/js/global-nav.js
+src/js/modules/global-nav.js
+src/js/modules/cookie-policy.js
 .venv
