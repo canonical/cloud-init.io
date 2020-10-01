@@ -16,11 +16,12 @@
   },
   "dependencies": {
     "global-nav": "2.0.3",
+    "postcss": "8.1.1",
     "vanilla-framework": "2.17.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "0.11.0",
-    "autoprefixer": "9.8.6",
+    "autoprefixer": "10.0.1",
     "concurrently": "5.3.0",
     "node-sass": "4.14.1",
     "postcss-cli": "8.0.0",
