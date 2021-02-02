@@ -2,7 +2,7 @@
   "scripts": {
     "build": "yarn run build-css && yarn run build-js && yarn run build-site",
     "build-site": "eleventy --formats=html,scss,css,js,ico --input=src --output=_site",
-    "build-css": "node-sass --include-path node_modules src/sass --source-map true --output-style compressed --output src/css && postcss --use autoprefixer --replace 'src/css/**/*.css'",
+    "build-css": "sass src/sass/main.scss src/css/main.css --load-path=node_modules --style=compressed && postcss --no-map --use autoprefixer --replace 'src/css/**/*.css'",
     "build-js": "yarn run build-global-nav && yarn run build-cookie-policy",
     "build-global-nav": "mkdir -p src/js/modules && cp node_modules/@canonical/global-nav/dist/global-nav.js src/js/modules/global-nav.js",
     "build-cookie-policy": "mkdir -p src/js/modules && cp node_modules/@canonical/cookie-policy/build/js/cookie-policy.js src/js/modules/cookie-policy.js",
@@ -27,7 +27,7 @@
     "@11ty/eleventy": "0.11.1",
     "autoprefixer": "10.2.4",
     "concurrently": "5.3.0",
-    "node-sass": "5.0.0",
+    "sass": "1.27.0",
     "postcss-cli": "8.3.1",
     "stylelint": "13.9.0",
     "stylelint-config-standard": "20.0.0",
