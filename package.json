@@ -17,11 +17,11 @@
     "watch": "watch -p 'static/sass/**/*.scss' -c 'yarn run build'"
   },
   "dependencies": {
-    "@canonical/cookie-policy": "3.1.2",
+    "@canonical/cookie-policy": "3.2.0",
     "@canonical/global-nav": "2.4.5",
     "global-nav": "2.0.3",
     "postcss": "8.2.4",
-    "vanilla-framework": "2.23.0"
+    "vanilla-framework": "2.24.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "0.11.1",
