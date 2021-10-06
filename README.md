@@ -1,7 +1,7 @@
 # Cloud Init
 
 [![CircleCI build status](https://circleci.com/gh/canonical-web-and-design/cloud-init.io.svg?style=shield)](https://circleci.com/gh/canonical-web-and-design/cloud-init.io)
-[![Code coverage](https://codecov.io/gh/canonical-web-and-design/cloud-init.io/branch/master/graph/badge.svg)](https://codecov.io/gh/canonical-web-and-design/cloud-init.io)
+[![Code coverage](https://codecov.io/gh/canonical-web-and-design/cloud-init.io/branch/main/graph/badge.svg)](https://codecov.io/gh/canonical-web-and-design/cloud-init.io)
 
 Codebase for http://cloud-init.io - the marketing website
 
