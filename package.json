@@ -28,7 +28,7 @@
     "autoprefixer": "10.2.4",
     "concurrently": "5.3.0",
     "sass": "1.27.0",
-    "postcss-cli": "8.3.1",
+    "postcss-cli": "9.1.0",
     "stylelint": "13.9.0",
     "stylelint-config-standard": "20.0.0",
     "stylelint-order": "4.1.0",
