@@ -17,8 +17,8 @@
     "watch": "watch -p 'static/sass/**/*.scss' -c 'yarn run build'"
   },
   "dependencies": {
-    "@canonical/cookie-policy": "3.3.0",
-    "@canonical/global-nav": "2.5.0",
+    "@canonical/cookie-policy": "3.4.0",
+    "@canonical/global-nav": "2.6.0",
     "global-nav": "2.0.3",
     "postcss": "8.4.5",
     "vanilla-framework": "2.37.1"
