@@ -66,7 +66,7 @@
     background-image: linear-gradient ( to bottom left, rgba(216, 216, 216, 0.14) 0, rgba(216, 216, 216, 0.14) 49.9%, transparent 50%), linear-gradient(to bottom right, rgba(228, 228, 228, 0.14) 0, rgba(228, 228, 228, 0.14) 49.9%, transparent 50%), linear-gradient(to top left, rgba(247, 247, 247, 1) 0%, rgba(247, 247, 247, 1) 49.3%, rgba(247, 247, 247, 0) 50%, rgba(247, 247, 247, 0) 100%), linear-gradient(201deg, #4e4e4e 0%, #333 46%, #111 90%);
   }
 
-  @media (max-width: $breakpoint-medium) {
+  @media (max-width: $breakpoint-small) {
     background-position: top right, top left, right bottom -1px, left top;
     background-repeat: no-repeat;
     background-size: 74% 99.83%, 148% 83%, 119% 13%, 100% 99.83%;
