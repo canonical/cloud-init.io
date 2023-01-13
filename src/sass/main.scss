@@ -16,21 +16,13 @@
   background-color: #fff;
   -webkit-box-align: center;
   -webkit-box-pack: justify;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-  -ms-flex-pack: justify;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .p-logo-image {
   align-items: center;
-  -webkit-box-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
 }
@@ -40,7 +32,7 @@
   width: 21.875%;
 
   @media screen and (min-width: 620px) {
-    width: 15.04854%;
+    width: 15.0485%;
   }
 }
 
@@ -53,7 +45,26 @@
 
   background-blend-mode: multiply, multiply, normal, normal;
   background-color: #111;
-  background-image: linear-gradient(to bottom left, rgba(216, 216, 216, 0.54) 0, rgba(216, 216, 216, 0.54) 49.9%, transparent 50%), linear-gradient(to bottom right, rgba(228, 228, 228, 0.54) 0, rgba(228, 228, 228, 0.54) 49.9%, transparent 50%), linear-gradient(to top left, rgba(247, 247, 247, 1) 0%, rgba(247, 247, 247, 1) 49.3%, rgba(247, 247, 247, 0) 50%, rgba(247, 247, 247, 0) 100%), linear-gradient(201deg, #4e4e4e 0%, #333 46%, #111 90%);
+  background-image:
+    linear-gradient(
+      to bottom left,
+      rgb(216 216 216 / 54%) 0,
+      rgb(216 216 216 / 54%) 49.9%,
+      transparent 50%
+    ),
+    linear-gradient(
+      to bottom right,
+      rgb(228 228 228 / 54%) 0,
+      rgb(228 228 228 / 54%) 49.9%,
+      transparent 50%
+    ),
+    linear-gradient(
+      to top left,
+      rgb(247 247 247 / 100%) rgb(247 247 247 / 100%) 49.3%,
+      rgb(247 247 247 / 0%) 50%,
+      rgb(247 247 247 / 0%) 100%
+    ),
+    linear-gradient(201deg, #4e4e4e 0%, #333 46%, #111 90%);
   background-position: top right, top left, right bottom -1px, left top;
   background-repeat: no-repeat;
   background-size: 74% 99.83%, 98% 91%, 192.8% 23.26%, 100% 99.8%;
@@ -63,7 +74,27 @@
   padding-top: 2rem;
 
   @supports not (background-blend-mode: multiply) {
-    background-image: linear-gradient ( to bottom left, rgba(216, 216, 216, 0.14) 0, rgba(216, 216, 216, 0.14) 49.9%, transparent 50%), linear-gradient(to bottom right, rgba(228, 228, 228, 0.14) 0, rgba(228, 228, 228, 0.14) 49.9%, transparent 50%), linear-gradient(to top left, rgba(247, 247, 247, 1) 0%, rgba(247, 247, 247, 1) 49.3%, rgba(247, 247, 247, 0) 50%, rgba(247, 247, 247, 0) 100%), linear-gradient(201deg, #4e4e4e 0%, #333 46%, #111 90%);
+    background-image:
+      linear-gradient(
+        to bottom left,
+        rgb(216 216 216 / 14%) 0,
+        rgb(216 216 216 / 14%) 49.9%,
+        transparent 50%
+      ),
+      linear-gradient(
+        to bottom right,
+        rgb(228 228 228 / 14%) 0,
+        rgb(228 228 228 / 14%) 49.9%,
+        transparent 50%
+      ),
+      linear-gradient(
+        to top left,
+        rgb(247 247 247 / 100%) 0%,
+        rgb(247 247 247 / 100%) 49.3%,
+        rgb(247 247 247 / 0%) 50%,
+        rgb(247 247 247 / 0%) 100%
+      ),
+      linear-gradient(201deg, #4e4e4e 0%, #333 46%, #111 90%);
   }
 
   @media (max-width: $breakpoint-small) {
