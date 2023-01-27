@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> - The standard for customising cloud instances</title>
+    <meta name="description" content="">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="/">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KSFXK39');</script>
+    <!-- End Google Tag Manager -->
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSFXK39"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="page-content">
+        
+<header id="navigation" class="p-navigation">
+  <div class="p-navigation__row">
+    <div class="p-navigation__banner">
+      <div class="p-navigation__logo">
+        <a class="p-navigation__item" href="/">
+          <img src="https://assets.ubuntu.com/v1/15971bf5-cloud-init-primary.svg" alt="cloud-init logo" class="p-navigation__image">
+        </a>
+      </div>
+    </div>
+    <nav class="p-navigation__nav">
+      <span class="u-off-screen">
+        <a href="#main-content">Jump to main content</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<section class="p-strip--header">
+  <div class="row u-vertically-center">
+    <div class="col-7">
+      <h1>The standard for customising cloud instances</h1>
+      <div>
+        <a class="github-button" data-size="large" href="https://github.com/canonical/cloud-init" aria-label="Follow @canonical on GitHub"></a>
+        <a class="github-button" data-size="large" href="https://github.com/canonical/cloud-init" data-icon="octicon-star" data-show-count="true" aria-label="Star canonical/cloud-init on GitHub"></a>
+        <a class="github-button" data-size="large" href="https://github.com/canonical/cloud-init/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork canonical/cloud-init on GitHub"></a>
+      </div>
+    </div>
+    <div class="col-5">
+      <div class="u-embedded-media">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-zL3BdbKyGY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="u-embedded-media__element"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="p-strip--light">
+  <div class="row">
+    <div class="col-8">
+      <p>Cloud images are operating system templates and every instance starts out as an identical clone of every other instance. It is the user data that gives every cloud instance its personality and cloud-init is the tool that applies user data to your instances automatically.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <h4>Use cloud-init to configure:</h4>
+      <ul class="p-list is-split">
+        <li class="p-list__item is-ticked">Setting a default locale</li>
+        <li class="p-list__item is-ticked">Setting the hostname</li>
+        <li class="p-list__item is-ticked">Generating and setting up SSH private keys</li>
+        <li class="p-list__item is-ticked">Setting up ephemeral mount points</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="p-strip is-deep">
+  <div class="row">
+    <div class="col-8 u-sv3">
+      <h2>Works with many popular operating systems</h2>
+      <p>While cloud-init started life in Ubuntu, it is now available for most major Linux and FreeBSD operating systems. For cloud image providers, then cloud-init handles many of the differences between cloud vendors automatically &mdash; for example, the official Ubuntu cloud images are identical across all public and private clouds.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="p-card col-3">
+      <header class="p-card__header">
+        <img class="p-card__thumbnail" src="https://assets.ubuntu.com/v1/adac6928-ubuntu.svg" alt="Ubuntu logo">
+      </header>
+      <a href="https://launchpad.net/ubuntu/+source/cloud-init">Get packages</a>
+    </div>
+    <div class="p-card col-3">
+      <header class="p-card__header">
+        <img class="p-card__thumbnail" src="https://assets.ubuntu.com/v1/e0b23092-archlinux.svg" alt="Arch Linux logo">
+      </header>
+      <a href="https://wiki.archlinux.org/index.php/Cloud-init">Get packages</a>
+    </div>
+    <div class="p-card col-3">
+      <header class="p-card__header">
+        <img class="p-card__thumbnail" src="https://assets.ubuntu.com/v1/c69a8b3c-centos-logo.png" alt="CentOS logo">
+      </header>
+      <a href="https://copr.fedorainfracloud.org/coprs/g/cloud-init/el-stable/">Get packages</a>
+    </div>
+    <div class="p-card col-3">
+      <header class="p-card__header">
+        <img class="p-card__thumbnail" src="https://assets.ubuntu.com/v1/5dfb492c-Red_Hat_Logo_2019.svg" alt="Red Hat logo">
+      </header>
+      <a href="https://copr.fedorainfracloud.org/coprs/g/cloud-init/el-stable/">Get packages</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="p-card col-3">
+      <header class="p-card__header">
+        <img class="p-card__thumbnail" src="https://assets.ubuntu.com/v1/65ab4aca-FREEBSD_Logo_Horiz_Pos_RGB.png" alt="FreeBSD logo">
+      </header>
+      <a href="https://www.freshports.org/net/cloud-init/">Get packages</a>
+    </div>
+    <div class="p-card col-3">
+      <header class="p-card__header">
+        <img class="p-card__thumbnail" src="https://assets.ubuntu.com/v1/893e5c0a-Fedora_logo_%282021%29.svg" alt="Fedora logo">
+      </header>
+      <a href="https://koji.fedoraproject.org/koji/packageinfo?packageID=12620">Get packages</a>
+    </div>
+    <div class="p-card col-3">
+      <header class="p-card__header">
+        <img class="p-card__thumbnail" src="https://assets.ubuntu.com/v1/edc33d73-gentoo-linux-logo.svg" alt="Gentoo Linux logo">
+      </header>
+      <a href="https://packages.gentoo.org/package/app-emulation/cloud-init">Get packages</a>
+    </div>
+    <div class="p-card col-3">
+      <header class="p-card__header">
+        <img class="p-card__thumbnail" src="https://assets.ubuntu.com/v1/2e497b2e-opensuse.svg" alt="OpenSUSE logo">
+      </header>
+      <a href="https://build.opensuse.org/package/show/Cloud:Tools/cloud-init">Get packages</a>
+    </div>
+  </div>
+</section>
+
+<section class="p-strip--light">
+  <div class="row">
+    <div class="col-8">
+      <h2>Source code</h2>
+    </div>
+  </div>
+  <div class="row u-equal-height">
+    <div class="p-card col-6">
+      <h3 class="p-card__title">GitHub</h3>
+      <p class="p-card__content">Browse, branch, fork or clone from GitHub.</p>
+      <a href="https://github.com/canonical/cloud-init">GitHub repository</a>
+    </div>
+    <div class="p-card col-6">
+      <h3 class="p-card__title">Download</h3>
+      <p class="p-card__content">Download the officially released archives.</p>
+      <a href="https://launchpad.net/cloud-init/+download">Download project files</a>
+    </div>
+  </div>
+</section>
+
+<section class="p-strip">
+  <div class="u-fixed-width">
+    <div class="p-logo-section">
+      <p class="p-logo-section__title">Used across the public cloud</p>
+      <div class="p-logo-section__items">
+        <div class="p-logo-section__item">
+          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/a1e6f331-2018-logo-rackspace.svg" alt="Rackspace">
+        </div>
+        <div class="p-logo-section__item">
+          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/2274a3e2-2018-logo-OVH.svg" alt="OVH">
+        </div>
+        <div class="p-logo-section__item">
+          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/6aec3a9f-2018-logo-vmware.svg" alt="VMware">
+        </div>
+        <div class="p-logo-section__item">
+          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/d31f722d-Partner-Microsoft-Azure-logo.png" alt="Microsoft Azure">
+        </div>
+        <div class="p-logo-section__item">
+          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/43d45da9-Anbox-logo-aws.png" alt="Amazon Web Services">
+        </div>
+        <div class="p-logo-section__item">
+          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/bebc29f2-2018-logo-Joyent.svg" alt="Joyent">
+        </div>
+        <div class="p-logo-section__item">
+          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/8d9986ed-2018-logo-Fujitsu.svg" alt="Fujitsu">
+        </div>
+        <div class="p-logo-section__item">
+          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/410984a3-Google-cloud-platform-stacked.svg" alt="Google Cloud Platform">
+        </div>
+        <div class="p-logo-section__item">
+          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/debf01e1-Oracle-Cloud-Logo-350.png" alt="Oracle Cloud">
+        </div>
+    </ul>
+    <div class="row u-align--center">
+      <a href="https://canonical.com/partners/find-a-partner?filters=public-cloud">See our other Ubuntu public cloud partners</a>
+    </div>
+  </div>
+</section>
+
+<section class="p-strip--light">
+  <div class="row">
+    <div class="col-8">
+      <h2>Support</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3 p-card">
+      <h4>
+        <a href="https://cloudinit.readthedocs.org/">Read the docs</a>
+      </h4>
+      <p>
+        Including datasource and module references, and plenty of examples.
+      </p>
+    </div>
+    <div class="col-3 p-card">
+      <h4>
+        <a href="https://libera.chat/">Chat on Libera Chat</a>
+      </h4>
+      <p>We have an active IRC community on #cloud-init &mdash; get involved!</p>
+    </div>
+    <div class="col-3 p-card">
+      <h4>
+        <a href="https://ubuntu.com/blog/cloud-instance-initialisation-with-cloud-init">Read the whitepaper</a>
+      </h4>
+      <p>Cloud Instance Initialisation with cloud-init.</p>
+    </div>
+    <div class="col-3 p-card">
+      <h4>
+        <a href="https://bugs.launchpad.net/cloud-init/+filebug">Report a bug</a>
+      </h4>
+      <p>Help us improve the software by flagging bugs and issues you find on Launchpad.</p>
+    </div>
+  </div>
+</section>
+
+<section class="p-strip">
+  <div class="row">
+    <div class="col-8">
+      <h2>About</h2>
+      <p>cloud-init is developed and released as free software under both the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3 open source license</a> and the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License version 2.0</a>. It was originally designed for the <a href="https://www.ubuntu.com/">Ubuntu</a> distribution of Linux in Amazon EC2, but is now supported on many Linux and UNIX distributions in every major cloud.</p>
+    </div>
+  </div>
+</section>
+
+<script src="/js/modules/cookie-policy.js"></script>
+<script src="/js/modules/global-nav.js"></script>
+<script>
+  canonicalGlobalNav.createNav({
+    maxWidth: '72rem',
+  });
+  cpNs.cookiePolicy();
+</script>
+
+    </div>
+
+    <div class="p-strip is-shallow">
+      <div class="row">
+        <hr />
+        <p>&copy; 2023 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</p>
+        <ul class="p-inline-list--middot">
+          <li class="p-inline-list__item"><a class="p-link--soft" aria-label="External link to the Ubuntu legal information page" href="http://www.ubuntu.com/legal">Legal information</a></li>
+          <li class="p-inline-list__item"><a class="p-link--soft" aria-label="External link to report a bug on this site" href="https://github.com/ubuntudesign/cloud-init/issues/new">Report a bug on this site</a></li>
+          <li class="p-inline-list__item"><a href="" class="js-revoke-cookie-manager">Manage your tracker settings</a></li>
+        </ul>
+        <span class="u-off-screen">
+          <a href="#">Go to the top of the page</a>
+        </span>
+      </div>
+    </div>
+    <!-- GitHub buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>
