@@ -21,7 +21,7 @@
     "@canonical/global-nav": "2.7.0",
     "global-nav": "2.0.3",
     "postcss": "8.4.21",
-    "vanilla-framework": "3.10.0"
+    "vanilla-framework": "3.11.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "1.0.2",
