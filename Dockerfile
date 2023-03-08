@@ -37,7 +37,7 @@ RUN yarn run build-site
 
 # Build the production image
 # ===
-FROM ubuntu:focal
+FROM ubuntu:jammy
 
 # Set up environment
 ENV LANG C.UTF-8
