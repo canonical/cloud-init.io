@@ -1,6 +1,6 @@
 domain: cloud-init.io
 
-image: prod-comms.docker-registry.canonical.com/cloud-init.io
+image: prod-comms.ps5.docker-registry.canonical.com/cloud-init.io
 
 useProxy: false
 
