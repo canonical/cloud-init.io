@@ -19,7 +19,6 @@
   "dependencies": {
     "@canonical/cookie-policy": "3.5.0",
     "@canonical/global-nav": "3.6.2",
-    "global-nav": "2.0.3",
     "postcss": "8.4.31",
     "vanilla-framework": "4.6.0"
   },
