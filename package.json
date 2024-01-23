@@ -19,18 +19,18 @@
   "dependencies": {
     "@canonical/cookie-policy": "3.5.0",
     "@canonical/global-nav": "3.6.2",
-    "postcss": "8.4.31",
+    "postcss": "8.4.33",
     "vanilla-framework": "4.6.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "1.0.2",
-    "autoprefixer": "10.4.13",
+    "autoprefixer": "10.4.17",
     "concurrently": "7.6.0",
-    "sass": "1.57.1",
+    "sass": "1.70.0",
     "postcss-cli": "10.1.0",
     "stylelint": "14.16.1",
     "stylelint-config-standard-scss": "6.1.0",
-    "stylelint-order": "6.0.1",
+    "stylelint-order": "6.0.4",
     "watch-cli": "0.2.3"
   }
 }
