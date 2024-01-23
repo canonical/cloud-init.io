@@ -27,7 +27,7 @@ jobs:
         uses: canonical/install-dotrun@main
 
       - name: Install dependencies
-      - run: |
+        run: |
           sudo chmod -R 777 .
           dotrun install
 
