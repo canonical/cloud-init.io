@@ -11,6 +11,13 @@
     <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' }}">
+    <script src="/js/modules/cookie-policy.js"></script>
+    <script>
+      cpNs.cookiePolicy();
+      if (typeof canonicalGlobalNav !== "undefined") {
+        canonicalGlobalNav.createNav({breakpoint: 940});
+      }
+    </script>
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
