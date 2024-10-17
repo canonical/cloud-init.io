@@ -3,7 +3,7 @@
 
 # Build stage: Install yarn dependencies
 # ===
-FROM node:18 AS yarn-dependencies
+FROM node:23 AS yarn-dependencies
 WORKDIR /srv
 ADD package.json .
 RUN --mount=type=cache,target=/usr/local/share/.cache/yarn yarn install
@@ -37,7 +37,7 @@ RUN yarn run build-site
 
 # Build the production image
 # ===
-FROM ubuntu:jammy
+FROM ubuntu:noble
 
 # Set up environment
 ENV LANG C.UTF-8
