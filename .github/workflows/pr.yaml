@@ -13,7 +13,7 @@ jobs:
 
       - name: Run image
         run: |
-          docker run --detach --publish 80:80 cloud-init-io
+          docker run --env SECRET_KEY=insecure_secret_key --network host cloud-init-io &
           sleep 1
           curl --head --fail --retry-delay 1 --retry 30 --retry-connrefused http://localhost
 
