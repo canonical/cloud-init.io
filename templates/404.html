@@ -1,0 +1,11 @@
+{% extends '/_error.tmpl' %}
+
+{% set error_code = "404" %}
+
+{% set error_message = "Page not found" %}
+
+{% block error_content %}
+we couldn't load this page.<br/>
+  Try reloading or <a href="https://github.com/canonical/canonical.com/issues/new?template=ISSUE_TEMPLATE.md">file an issue</a>.<br/>
+  Please note, this may be a <a href="https://github.com/canonical/canonical.com/issues">known issue</a> that we are working on.
+{% endblock error_content %}

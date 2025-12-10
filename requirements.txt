@@ -1,0 +1,2 @@
+canonicalwebteam.flask-base==2.6.1
+canonicalwebteam.http==1.0.4

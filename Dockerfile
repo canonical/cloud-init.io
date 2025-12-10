@@ -1,59 +1,55 @@
-# syntax=docker/dockerfile:experimental
-
+# Build stage: Install python dependencies
+# ===
+FROM ubuntu:jammy AS python-dependencies
+RUN apt-get update && apt-get install --no-install-recommends --yes python3-pip python3-setuptools git
+ADD requirements.txt /tmp/requirements.txt
+RUN --mount=type=cache,target=/root/.cache/pip pip3 install --user --requirement /tmp/requirements.txt
 
 # Build stage: Install yarn dependencies
 # ===
 FROM node:18 AS yarn-dependencies
 WORKDIR /srv
 ADD package.json .
-RUN --mount=type=cache,target=/usr/local/share/.cache/yarn yarn install
-
+RUN --mount=type=cache,target=/usr/local/share/.cache/yarn yarn install --production
 
 # Build stage: Run "yarn run build-js"
 # ===
 FROM yarn-dependencies AS build-js
-WORKDIR /srv
-COPY src/js src/js
+ADD . .
 RUN yarn run build-js
-
 
 # Build stage: Run "yarn run build-css"
 # ===
 FROM yarn-dependencies AS build-css
-WORKDIR /srv
-COPY src/sass src/sass
+ADD . .
 RUN yarn run build-css
-
-
-# Build stage: Run "yarn run build-site"
-# ===
-FROM yarn-dependencies AS build-site
-WORKDIR /srv
-COPY src/ src/
-COPY --from=build-css /srv/src/css src/css
-COPY --from=build-js /srv/src/js src/js
-RUN yarn run build-site
 
 
 # Build the production image
 # ===
 FROM ubuntu:jammy
 
+# Install python and import python dependencies
+RUN apt-get update && apt-get install --no-install-recommends --yes python3-setuptools python3-lib2to3 python3-pkg-resources ca-certificates libsodium-dev git
+COPY --from=python-dependencies /root/.local/lib/python3.10/site-packages /root/.local/lib/python3.10/site-packages
+COPY --from=python-dependencies /root/.local/bin /root/.local/bin
+ENV PATH="/root/.local/bin:${PATH}"
+
 # Set up environment
 ENV LANG C.UTF-8
 WORKDIR /srv
 
-# Install nginx
-RUN apt-get update && apt-get install --no-install-recommends --yes nginx
+# COPY necessary all files but remove those that are not required
+COPY . .
+RUN rm -rf package.json yarn.lock .babelrc webpack.config.js requirements.txt postcss.config.js
+COPY --from=build-css /srv/static/css static/css
+COPY --from=build-js /srv/static/js static/js
+COPY --from=build-js /srv/node_modules/vanilla-framework/templates node_modules/vanilla-framework/templates
 
-# Import code, build assets and mirror list
-RUN rm -rf package.json yarn.lock .babelrc webpack.config.js Gemfile.lock nginx.conf
-COPY --from=build-site /srv/_site .
-
+# Set revision ID
 ARG BUILD_ID
-ADD nginx.conf /etc/nginx/sites-enabled/default
-RUN sed -i "s/~BUILD_ID~/${BUILD_ID}/" /etc/nginx/sites-enabled/default
+ENV TALISKER_REVISION_ID "${BUILD_ID}"
 
-STOPSIGNAL SIGTERM
-
-CMD ["nginx", "-g", "daemon off;"]
+# Setup commands to run server
+ENTRYPOINT ["./entrypoint"]
+CMD ["0.0.0.0:80"]

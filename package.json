@@ -1,20 +1,16 @@
 {
   "scripts": {
-    "build": "yarn run build-css && yarn run build-js && yarn run build-site",
-    "build-site": "eleventy --formats=html,scss,css,js,ico --input=src --output=_site",
-    "build-css": "sass src/sass/main.scss src/css/main.css --load-path=node_modules --style=compressed && postcss --no-map --use autoprefixer --replace 'src/css/**/*.css'",
+    "build": "yarn run build-css && yarn run build-js",
+    "build-css": "sass static/sass/main.scss static/css/main.css --load-path=node_modules --style=compressed && postcss --no-map --use autoprefixer --replace 'static/css/**/*.css'",
     "build-js": "yarn run build-global-nav && yarn run build-cookie-policy",
-    "build-global-nav": "mkdir -p src/js/modules && cp node_modules/@canonical/global-nav/dist/global-nav.js src/js/modules/global-nav.js",
-    "build-cookie-policy": "mkdir -p src/js/modules && cp node_modules/@canonical/cookie-policy/build/js/cookie-policy.js src/js/modules/cookie-policy.js",
-    "watch-css": "watch -p 'src/sass/**/*.scss' -c 'yarn run build-css'",
-    "watch-js": "watch -p 'node_modules/global-nav/dist/index.js' -c 'yarn run build-js'",
-    "clean": "rm -rf node_modules yarn-error.log src/css *.log _site/",
-    "lint-nginx": "gixy nginx.conf",
-    "lint-scss": "stylelint src/sass/**/*.scss",
-    "serve": "eleventy --formats=html,scss,css,js,ico --input=src --output=_site --watch --serve --port $PORT",
-    "start": "yarn run build && concurrently --raw 'yarn run watch-css' 'yarn run watch-js' 'yarn run serve'",
-    "test": "yarn run lint-nginx && yarn run lint-scss",
-    "watch": "watch -p 'static/sass/**/*.scss' -c 'yarn run build'"
+    "build-global-nav": "mkdir -p static/js/modules && cp node_modules/@canonical/global-nav/dist/global-nav.js static/js/modules/global-nav.js",
+    "build-cookie-policy": "mkdir -p static/js/modules && cp node_modules/@canonical/cookie-policy/build/js/cookie-policy.js static/js/modules/cookie-policy.js",
+    "watch-css": "watch -p 'static/sass/**/*.scss' -c 'yarn run build-css'",
+    "watch-js": "watch -p 'node_modules/@canonical/global-nav/dist/global-nav.js' -c 'yarn run build-js'",
+    "watch": "concurrently --kill-others --raw 'yarn run watch-css' 'yarn run watch-js'",
+    "serve": "./entrypoint 0.0.0.0:${PORT}",
+    "start": "yarn run build && concurrently --raw 'yarn run watch' 'yarn run serve'",
+    "clean": "rm -rf node_modules yarn-error.log static/css static/js *.log"
   },
   "dependencies": {
     "@canonical/cookie-policy": "3.6.4",
@@ -23,11 +19,10 @@
     "vanilla-framework": "4.6.0"
   },
   "devDependencies": {
-    "@11ty/eleventy": "1.0.2",
     "autoprefixer": "10.4.17",
     "concurrently": "7.6.0",
-    "sass": "1.70.0",
     "postcss-cli": "10.1.0",
+    "sass": "1.70.0",
     "stylelint": "14.16.1",
     "stylelint-config-standard-scss": "6.1.0",
     "stylelint-order": "6.0.4",
