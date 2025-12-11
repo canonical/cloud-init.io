@@ -14,7 +14,7 @@
     "lint-scss": "stylelint static/**/*.scss"
   },
   "dependencies": {
-    "@canonical/cookie-policy": "3.6.4",
+    "@canonical/cookie-policy": "3.8.4",
     "@canonical/global-nav": "3.6.2",
     "autoprefixer": "^10.4.22",
     "postcss": "8.4.33",
