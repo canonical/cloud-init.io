@@ -15,12 +15,12 @@
   },
   "dependencies": {
     "@canonical/cookie-policy": "3.8.4",
-    "@canonical/global-nav": "3.6.2",
+    "@canonical/global-nav": "3.8.0",
     "autoprefixer": "^10.4.22",
     "postcss": "8.4.33",
     "postcss-cli": "^11.0.1",
     "sass": "^1.95.1",
-    "vanilla-framework": "4.6.0"
+    "vanilla-framework": "4.38.0"
   },
   "devDependencies": {
     "concurrently": "7.6.0",
