@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+      {% block title %}
+        cloud-init - The standard for customising cloud instances
+      {% endblock %}
+    </title>
+
+    <meta name="description" content="{% block meta_description %}The standard for customising cloud instances{% endblock %}">
+
+    {% block head_extra %}{% endblock %}
+
+    <link rel="icon" href="{{ versioned_static('favicon.ico') }}">
+    <link rel="stylesheet" href="{{ versioned_static('css/main.css') }}">
+
+    <script src="{{ versioned_static('js/modules/cookie-policy.js') }}"></script>
+    <script src="{{ versioned_static('js/modules/global-nav.js') }}"></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KSFXK39');</script>
+    <!-- End Google Tag Manager -->
+  </head>
+
+  <body class="{% block body_class %}{% endblock %}">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSFXK39"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="page-content">
+      {% block content %}{% endblock %}
+    </div>
+
+    <div class="p-strip is-shallow">
+      <div class="row">
+        <hr />
+        <p>&copy; {{ current_year }} Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</p>
+        <ul class="p-inline-list--middot">
+          <li class="p-inline-list__item">
+            <a class="p-link--soft" aria-label="External link to the Ubuntu legal information page" href="http://www.ubuntu.com/legal">
+              Legal information
+            </a>
+          </li>
+          <li class="p-inline-list__item">
+            <a class="p-link--soft" aria-label="External link to report a bug on this site" href="https://github.com/ubuntudesign/cloud-init/issues/new">
+              Report a bug on this site
+            </a>
+          </li>
+          <li class="p-inline-list__item">
+            <a href="" class="js-revoke-cookie-manager">Manage your tracker settings</a>
+          </li>
+        </ul>
+        <span class="u-off-screen">
+          <a href="#">Go to the top of the page</a>
+        </span>
+      </div>
+    </div>
+
+    <!-- GitHub buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+      if (typeof cpNs !== "undefined" && cpNs.cookiePolicy) {
+        cpNs.cookiePolicy();
+      }
+      if (typeof canonicalGlobalNav !== "undefined") {
+        canonicalGlobalNav.createNav({ breakpoint: 940 });
+      }
+    </script>
+  </body>
+</html>
