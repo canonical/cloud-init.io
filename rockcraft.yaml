@@ -1,0 +1,30 @@
+# See https://documentation.ubuntu.com/rockcraft/1.16.0/reference/extensions/flask-framework
+# For questions or help, visit https://matrix.to/#/#12-factor-charms:ubuntu.com
+
+name: cloud-init-io
+base: ubuntu@22.04
+version: "0.1"
+summary: cloud-init website https://cloud-init.io/
+description: |
+  Cloud-init.io is the official website for cloud-init, the industry-standard tool
+  for early cloud instance initialization.
+platforms:
+  amd64:
+
+extensions:
+  - flask-framework
+# uncomment the sections you need and adjust according to your requirements.
+parts:  # you need to uncomment this line to add or update any part.
+
+  flask-framework/install-app:
+    prime:
+#       # by default, only the files in app/, templates/, static/, migrate, migrate.sh,
+#       # migrate.py and app.py are copied into the image. You can modify the list
+#       # below to override the default list and include or exclude specific
+#       # files/directories in your project.
+#       # note: prefix each entry with "flask/app/" followed by the local path.
+      - flask/app/.env
+      - flask/app/app.py
+      - flask/app/webapp
+      - flask/app/templates
+      - flask/app/static
