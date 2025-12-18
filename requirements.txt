@@ -1,2 +1,5 @@
 canonicalwebteam.flask-base==2.6.1
 canonicalwebteam.http==1.0.4
+canonicalwebteam.cookie-service==1.0.5
+Flask-Caching==2.1.0
+gunicorn[gevent]
