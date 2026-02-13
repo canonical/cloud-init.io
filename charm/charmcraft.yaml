@@ -1,0 +1,30 @@
+# This file configures Charmcraft.
+# See https://juju.is/docs/sdk/charmcraft-config for guidance.
+
+name: cloud-init-io
+
+type: charm
+
+bases:
+  - build-on:
+    - name: ubuntu
+      channel: "22.04"
+    run-on:
+    - name: ubuntu
+      channel: "22.04"
+
+# (Required)
+summary: This is the charm for the cloud-init.io website.
+
+# (Required)
+description: |
+  This is the charm for the cloud-init.io website.
+
+extensions:
+  - flask-framework
+
+config:
+  options:
+    cookie-service-api-key:
+      description: "Cookie Service API Key"
+      type: secret

@@ -1,0 +1,13 @@
+venv/
+build/
+*.charm
+.tox/
+.coverage
+__pycache__/
+*.py[cod]
+.idea
+.vscode/
+
+# Local auth and build artifacts
+charmhub.auth
+*.rock
