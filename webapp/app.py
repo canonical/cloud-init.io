@@ -1,5 +1,4 @@
 from canonicalwebteam.flask_base.app import FlaskBase
-from canonicalwebteam.cookie_service import CookieConsent
 from flask_caching import Cache
 import datetime
 from flask import render_template
@@ -34,13 +33,6 @@ def get_cache(key):
 def set_cache(key, value, timeout):
     cache.set(key, value, timeout)
 
-
-cookie_service = CookieConsent().init_app(
-    app,
-    get_cache_func=get_cache,
-    set_cache_func=set_cache,
-    start_health_check=True,
-)
 
 @app.route("/")
 def index():
